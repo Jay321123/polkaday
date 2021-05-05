@@ -5,8 +5,12 @@
             <div class="card">
                 <!-- Card header -->
                 <div class="card-header border-0">
+                    <form action="parker" method="POST">
                     <h3 class="mb-0">Parker Logs</h3>
                     <a href="/sample-report" class="btn btn-primary m-4">Generate Report</a>
+                    <input type="text" placeholder="Search parker.." name="search">
+                        <button type="search"><i class="fa fa-search"></i></button>
+                </form>
                 </div>
                 <!-- Light table -->
                 <div class="table-responsive">
