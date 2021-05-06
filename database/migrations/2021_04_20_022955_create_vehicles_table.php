@@ -18,6 +18,7 @@ class CreateVehiclesTable extends Migration
             $table->unsignedBigInteger('brand_id');
             $table->unsignedBigInteger('color_id');
             $table->string('plate_number');
+            $table->string('owner_name');
             $table->timestamps();
         });
     }

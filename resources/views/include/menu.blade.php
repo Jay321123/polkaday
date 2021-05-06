@@ -91,6 +91,7 @@
   <!-- Heading -->
   <h6 class="navbar-heading p-0 text-muted">
     <span style="color: green; font-size: 16px"><b> LOGS </b></span>
+    
   </h6>
   
   <!-- Navigation -->
@@ -118,7 +119,34 @@
         <span style="color: green; font-size: 16px"><b> Register Driver </b></span>
       </a>
     </li>
-
+<div >
+    <hr class="my-3" style="background-color: grey;" >
+    <h6 class="navbar-heading p-0 text-muted">
+      <span style="color: green; font-size: 16px"><b> about </b></span>
+    </h6>
+    <li class="nav-item">
+      <a class="nav-link" href="#"
+        >
+        <i class="ni ni-palette"></i>
+        <span style="color: green; font-size: 16px"><b> parking Rules</b></span>
+      
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"
+        >
+        <i class="ni ni-palette"></i>
+        <span style="color: green; font-size: 16px"><b> mision </b></span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"
+        >
+        <i class="ni ni-palette"></i>
+        <span style="color: green; font-size: 16px"><b> vision </b></span>
+      </a>
+    </li>
+</div>
     {{-- <li class="nav-item">
       <i class="ni "></i>
       <!-- Button trigger modal -->

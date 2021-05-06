@@ -26,6 +26,7 @@
     <!-- Header -->
     <div class=" py-7" style="background-image: url(asdqq.png); background-size: cover">
       @include('include.header')
+     
     </div>
     <!-- Page content -->
     <div class="container-fluid mt--6">

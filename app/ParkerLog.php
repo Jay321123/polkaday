@@ -11,7 +11,8 @@ class ParkerLog extends Model
         'dateTime_in',
         'dateTime_out',
         'dateTime_in',
-        'plate_number'
+        'plate_number',
+        'owner_name'
     ];
 
     public function parker(){

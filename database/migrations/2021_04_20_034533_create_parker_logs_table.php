@@ -19,6 +19,7 @@ class CreateParkerLogsTable extends Migration
             $table->string('plate_number');
             $table->dateTime('dateTime_in')->nullable();
             $table->dateTime('dateTime_out')->nullable();
+            $table->string('owner_name');
             $table->timestamps();
         });
     }

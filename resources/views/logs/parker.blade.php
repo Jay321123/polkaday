@@ -5,23 +5,31 @@
             <div class="card">
                 <!-- Card header -->
                 <div class="card-header border-0">
-                    <form action="parker" method="POST">
+                   
+                    <form  action="parker" method="POST">
+                        @csrf
                     <h3 class="mb-0">Parker Logs</h3>
                     <a href="/sample-report" class="btn btn-primary m-4">Generate Report</a>
                     <input type="text" placeholder="Search parker.." name="search">
                         <button type="search"><i class="fa fa-search"></i></button>
+                        
                 </form>
+                
                 </div>
-                <!-- Light table -->
+             
+               
+                
+                    <!-- Light table -->
                 <div class="table-responsive">
                     <table class="table align-items-center table-flush">
                         <thead class="thead-light">
                         <tr>
-                            <th scope="col" class="sort" data-sort="name">Parker Name</th>
-                            <th scope="col" class="sort" data-sort="name">Parker school ID</th>
+                            <th scope="col" class="sort" data-sort="name">Drivers name</th>
+                            <th scope="col" class="sort" data-sort="name">drivers school ID</th>
                             <th scope="col" class="sort" data-sort="name" >Date/Time Entered</th>
                            <th scope="col" class="sort" data-sort="name">Date/Time Out</th>
                             <th scope="col">Plate Number</th>
+                            <th scope="col" class="sort" data-sort="name">Owner of vehicle</th>
                         </tr>
                         </thead>
                         <tbody class="list">
@@ -71,6 +79,15 @@
                                 </div>
 
                             </th>
+                            <th scope="row">
+                                <div class="media align-items-center">
+                                    <div class="media-body">
+                                        <span class="name mb-0 text-sm">{{$user->owner_name}}</span>
+                                    </div>
+                                </div>
+
+                            </th>
+                            
                             
                             
                         </tr>

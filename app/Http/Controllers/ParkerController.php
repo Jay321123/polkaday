@@ -35,7 +35,8 @@ class ParkerController extends Controller
             'student_id' =>$student->id,
             'plate_number' =>$parker->plate_number,
             'dateTime_in' =>$parker->created_at,
-            'dateTime_out' =>Carbon::now()
+            'dateTime_out' =>Carbon::now(),
+            'owner_name' =>$parker->owner_name
         ]);
         $parker->update(['isValid' =>false]);
 
