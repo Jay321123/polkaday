@@ -14,21 +14,25 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 -->
 <!DOCTYPE html>
-<html>
+<html >
 
 @include('include.head')
 
-<body >
+<body style="background-image: url(Logo.png), url(qqqqqqqqqqqqqqqqqqqqqq.png);
+background-position: top right , left top;
+background-repeat: no-repeat, repeat;" >
+
 <!-- Sidenav -->
+
 @include('include.nav-side')
 <!-- Main content -->
 <div class="main-content" id="panel">
+
     <!-- Topnav -->
-    <nav class="navbar navbar-top navbar-expand navbar-dark bg-primary border-bottom">
+ 
         <div class="container-fluid">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <!-- Search form -->
-            @include('include.search')
             <!-- Navbar links -->
                 @include('include.navbar')
             </div>
@@ -36,12 +40,52 @@
     </nav>
     <!-- Header -->
     <!-- Header -->
-    <div class="header bg-primary pb-6">
+    <div>
         <div class="container-fluid">
-            <div class="header-body">
+            <div class="header-body" >
+                
                 <div class="row align-items-center py-4">
                     <div class="col-lg-6 col-7">
+                        <div>
+                            <div > 
+                            <H1 style="color: green;"><b>Parking Rules</b></H1>
+                        </div>
+                         <Div>
+                            
+                            <P><B><li style="color: green">
+                            Bawal Tanduay sa Sulod sa parkign area. Mariwana lang pwede
+                        </li></B></P>
+                        
+                        </Div>
+                    
+                        
+                        <Div>
+                        <P><B><li style="color: green">
+                            bawal mag date sa parking area. mag iyot lng pwede
+                        </li></B></P>
+                        </Div>
 
+                        <Div>
+                        <P><B><li style="color: green">
+                            bawal mag dala tanduay sa sulod. mag inum lang.
+                        </li></B></P>
+                        </Div>
+
+                        <Div>
+                        <P><B><li style="color: green">
+                             at pinakabawal sa lahat. bawal pumasok si mam del 
+                        </li></B></P>
+                        </Div>
+
+                        <Div>
+                        <P><B><li style="color: green">
+                            bawal ang tapok2 sa sulod ky social distancing. foam party lng
+                        </li></B></P>
+                        </Div>
+
+                            </Div>
+                        
+                        </div>
                     </div>
 
                 </div>
@@ -49,11 +93,7 @@
         </div>
     </div>
     <!-- Page content -->
-    <div class="container-fluid mt--6">
-       @yield('content')
-        @include('sweetalert::alert')
-        @include('include.footer')
-    </div>
+   
 </div>
 <!-- Argon Scripts -->
 <!-- Core -->

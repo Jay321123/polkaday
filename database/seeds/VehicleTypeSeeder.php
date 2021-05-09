@@ -20,7 +20,9 @@ class VehicleTypeSeeder extends Seeder
             ],
             [
                 'brand_name' =>'kawasaki',
-                'model' => 'Kawasaki Barako II'
+                'model' => 'Kawasaki Barako II',
+                'model' => 'Kawasaki Barako 123'
+                
                 // 'vechicle_type' =>'',
             ],
             [
@@ -30,9 +32,37 @@ class VehicleTypeSeeder extends Seeder
             ],
             [
                 'brand_name' =>'honda',
-                'model' => 'Click 150'
+                'model' => 'Click 150',
+                
                 // 'vechicle_type' =>'',
             ],
+            [
+                'brand_name' =>'Zuzuki',
+                'model' => 'Raider 150',
+                
+                // 'vechicle_type' =>'',
+            ],
+            [
+                'brand_name' =>'yamaha',
+                'model' => 'Sniper 150',
+                
+                // 'vechicle_type' =>'',
+            ],
+            [
+                'brand_name' =>'Mitsubishi',
+                'model' => 'Montero',
+                
+                // 'vechicle_type' =>'',
+            ],
+            [
+                'brand_name' =>'Ford',
+                'model' => 'Ranger',
+                
+                // 'vechicle_type' =>'',
+            ],
+            
+            
+            
             
         ]);
     }

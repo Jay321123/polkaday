@@ -29,6 +29,31 @@ class Student extends Seeder
             'lastname' =>'Smith',
             'id_number' =>'12341234',
             'course' =>'BSCS'
+            
+        ]);
+        AppStudent::create([
+            'firstname' =>'Margie ',
+            'lastname' =>'Ando',
+            'id_number' =>'111111111',
+            'course' =>'BSCP'
+        ]);
+        AppStudent::create([
+            'firstname' =>'Louie ',
+            'lastname' =>'Rulete',
+            'id_number' =>'222222222',
+            'course' =>'Ganner'
+        ]);
+        AppStudent::create([
+            'firstname' =>'Roland ',
+            'lastname' =>'Villa',
+            'id_number' =>'333333333',
+            'course' =>'Tanod'
+        ]);
+        AppStudent::create([
+            'firstname' =>'Rhyan ',
+            'lastname' =>'Dechosa',
+            'id_number' =>'444444444',
+            'course' =>'Mamayotay'
         ]);
     }
 

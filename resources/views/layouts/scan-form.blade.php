@@ -30,7 +30,7 @@
     <!-- Favicon -->
     <link href="{{ asset('img/favicon.png') }}" rel="icon" type="image/png">
 </head>
-<body id="page-top">
+<body id="page-top" style="background-image: url(qqqqqqqqqqqqqqqqqqqqqq.png) ">
 
 <!-- Page Wrapper -->
 <div id="wrapper">
@@ -44,7 +44,7 @@
         <div id="content">
 
             <!-- Topbar -->
-            <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+            <nav class="navbar navbar-expand navbar-light  topbar mb-4 static-top shadow">
 
             
                 <!-- Topbar Navbar -->
@@ -98,6 +98,7 @@
         </div>
     </div>
 </div>
+
 
 <!-- Scripts -->
 <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>

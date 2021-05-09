@@ -1,18 +1,19 @@
 @extends('layouts.table')
 @section('content')
-    <div class="row">
+
+
+    <div class="row" >
         <div class="col">
-            <div class="card">
+            <div >
                 <!-- Card header -->
                 <div class="card-header border-0">
-                   
-                    <form  action="parker" method="POST">
+                    <a href="/sample-report" class="btn btn-primary m-4">Generate Report</a>
+                    <form  action="/search" method="get">
                         @csrf
                     <h3 class="mb-0">Parker Logs</h3>
-                    <a href="/sample-report" class="btn btn-primary m-4">Generate Report</a>
-                    <input type="text" placeholder="Search parker.." name="search">
-                        <button type="search"><i class="fa fa-search"></i></button>
-                        
+                       <input type="text" placeholder="Search parker.." name="plate_number">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                       
                 </form>
                 
                 </div>
@@ -20,9 +21,9 @@
                
                 
                     <!-- Light table -->
-                <div class="table-responsive">
-                    <table class="table align-items-center table-flush">
-                        <thead class="thead-light">
+                <div class="table-responsive" >
+                    <table class="table align-items-center table-flush" >
+                        <thead class="thead-light " >
                         <tr>
                             <th scope="col" class="sort" data-sort="name">Drivers name</th>
                             <th scope="col" class="sort" data-sort="name">drivers school ID</th>

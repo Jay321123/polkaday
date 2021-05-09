@@ -1,7 +1,8 @@
-<div class="collapse navbar-collapse" id="sidenav-collapse-main">
+
+
   <!-- Nav items -->
   <ul>
-    <li class="nav-item">
+    <li class="nav-item" >
       <a class="nav-link active" href="/home">
         
         <span style="color: green; font-size: 16px"><b> Dashboard </b></span>
@@ -116,7 +117,14 @@
       <a class="nav-link" href="/register/driver"
         >
         <i class="ni ni-palette"></i>
-        <span style="color: green; font-size: 16px"><b> Register Driver </b></span>
+        <span style="color: green; font-size: 16px"><b> Register Vehicle </b></span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/RegisteredVehicle"
+        >
+        <i class="ni ni-palette"></i>
+        <span style="color: green; font-size: 16px"><b> Registered Vehicle </b></span>
       </a>
     </li>
 <div >
@@ -125,7 +133,7 @@
       <span style="color: green; font-size: 16px"><b> about </b></span>
     </h6>
     <li class="nav-item">
-      <a class="nav-link" href="#"
+      <a class="nav-link" href="/Rules"
         >
         <i class="ni ni-palette"></i>
         <span style="color: green; font-size: 16px"><b> parking Rules</b></span>
@@ -133,19 +141,13 @@
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#"
+      <a class="nav-link" href="mission"
         >
         <i class="ni ni-palette"></i>
-        <span style="color: green; font-size: 16px"><b> mision </b></span>
+        <span style="color: green; font-size: 16px"><b> Mission/Vission </b></span>
       </a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#"
-        >
-        <i class="ni ni-palette"></i>
-        <span style="color: green; font-size: 16px"><b> vision </b></span>
-      </a>
-    </li>
+    
 </div>
     {{-- <li class="nav-item">
       <i class="ni "></i>

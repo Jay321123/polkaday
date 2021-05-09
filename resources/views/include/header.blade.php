@@ -4,9 +4,10 @@
       <div class="col-lg-6 col-7">
         <!-- <h6 class="h2 text-white d-inline-block mb-0">Default</h6> -->
         <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
-          <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
+          <ol class="breadcrumb breadcrumb-links breadcrumb-dark" style="background-color: rgba(24,197,46,255)
+          ">
             <li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i></a></li>
-            <li style="color: green"><b>Dashboards</b></a></li>
+            <li style="color: black"><b>Dashboards</b></a></li>
             <!-- <li class="breadcrumb-item active" aria-current="page">Default</li> -->
           </ol>
         </nav>
@@ -21,10 +22,11 @@
       <div class="col-xl-3 col-md-4">
         <div class="card card-stats">
           <!-- Card body -->
-          <div class="card-body">
+          <div class="card-body" style="background-color: rgba(24,197,46,255)
+          ">
             <div class="row">
               <div class="col">
-                <h5 style="color: green">Total CSU</h5>
+                <h5 style="color: black"><b> Total CSU</b></h5>
                 {{-- <span class="h2 font-weight-bold mb-0">{{\App\User::role('staff')->count()}}</span> --}}
               </div>
               <div class="col-auto">
@@ -43,10 +45,11 @@
       <div class="col-xl-3 col-md-4">
         <div class="card card-stats">
           <!-- Card body -->
-          <div class="card-body">
+          <div class="card-body" style="background-color: rgba(24,197,46,255)
+          ">
             <div class="row">
               <div class="col">
-                <h5 style="color: green">Total Guest Registered</h5>
+                <h5 style="color: black"><b> Total Guest Registered</b></h5>
                 {{-- <span class="h2 font-weight-bold mb-0">{{\App\Guest::count()}}</span> --}}
               </div>
               <div class="col-auto">
@@ -65,10 +68,11 @@
         <div class="col-xl-3 col-md-4">
             <div class="card card-stats">
                 <!-- Card body -->
-                <div class="card-body">
+                <div class="card-body" style="background-color: rgba(24,197,46,255)
+                ">
                     <div class="row">
                         <div class="col">
-                            <h5 style="color: green">Total Guest Entered</h5>
+                            <h5 style="color: black"><b> Total Guest Entered</b></h5>
                             {{-- <span class="h2 font-weight-bold mb-0">{{ \App\Attendance::where('user_id',null)->count() }}</span> --}}
                         </div>
                         <div class="col-auto">
@@ -87,10 +91,11 @@
       <div class="col-xl-3 col-md-4">
         <div class="card card-stats">
           <!-- Card body -->
-          <div class="card-body">
+          <div class="card-body" style="background-color: rgba(24,197,46,255)
+          ">
             <div class="row">
               <div class="col">
-                <h5 style="color: green">Total Employee Entered</h5>
+                <h5 style="color: black"><b> Total Employee Entered</b></h5>
                 <span class="h2 font-weight-bold mb-0">{{ \App\Attendance::where('guest_id',null)->count() }}</span>
               </div>
               <div class="col-auto">
@@ -99,12 +104,10 @@
                 </div>
               </div>
             </div>
-            <p class="mt-3 mb-0 text-sm">
-              {{-- <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 000</span> --}}
-              {{-- <span class="text-nowrap">This Week</span> --}}
-            </p>
+            
           </div>
         </div>
+        
       </div>
 
     </div>

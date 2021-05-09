@@ -46,6 +46,8 @@ Route::get('/download',function (){
 
 });
 
+Route::view('test/register','test');
+
 //Route::view('login-v2','auth.login-v2');
 
 \Illuminate\Support\Facades\Auth::routes();
@@ -89,18 +91,31 @@ Route::get('scanner-test', function (){
 Route::post('qr-log','ParkerController@logs');
 
 Route::prefix('logs')->group(function (){
-    Route::get('/parker','LogsController@driver_logs');
+    // Route::get('/parker','LogsController@driver_logs');
     Route::get('guest','LogsController@guest_logs');
 });
-
+Route::get('/logs/parker','LogsController@driver_logs');
 
 //new route
 Route::post('/register/parker','ParkerController@register')->name('parker');
 // Route::get('/parker/list','Par');
 
-
+Route::get('/search','LogsController@search');
 Route::get('/admin', function(){
     
     $users = User::get();
     return view('home',compact('users'));
+});
+
+Route::get('/mission', function(){
+
+    return view('TextArea.Mission');
+});
+Route::get('/Rules', function(){
+
+    return view('TextArea.ParkingRules');
+});
+Route::get('/RegisteredVehicle', function(){
+    $parkers = Parkers::get();
+    return view('TextArea.new', compact( 'parkers'));
 });

@@ -23,7 +23,7 @@
 @include('sweetalert::alert')
 
 <!-- Main content -->
-<div class="main-content" id="panel" >
+<div class="main-content" id="panel"  >
     <!-- Topnav -->
    
     <!-- Page content -->
