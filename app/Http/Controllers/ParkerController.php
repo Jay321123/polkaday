@@ -31,12 +31,14 @@ class ParkerController extends Controller
         }
      
       DB::transaction(function() use($parker,$student){
+
         $logs = ParkerLog::create([
             'student_id' =>$student->id,
             'plate_number' =>$parker->plate_number,
             'dateTime_in' =>$parker->created_at,
             'dateTime_out' =>Carbon::now(),
-            'owner_name' =>$parker->owner_name
+            'owner_name' =>$parker->owner_name,
+            
         ]);
         $parker->update(['isValid' =>false]);
 
@@ -60,7 +62,8 @@ class ParkerController extends Controller
             'plate_number' =>$request->plate_number,
             'vehicle_type'=>$request->vehicle_type,
             'qr_number' =>$qr_code,
-            'owner_name' =>$request->owner_name
+            'owner_name' =>$request->owner_name,
+            'phone_number'=>$request->phone_number
         ]);
 
         //generate qr

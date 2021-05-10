@@ -30,7 +30,7 @@
     <!-- Favicon -->
     <link href="{{ asset('img/favicon.png') }}" rel="icon" type="image/png">
 </head>
-<body id="page-top" style="background-image: url(qqqqqqqqqqqqqqqqqqqqqq.png) ">
+<body id="page-top">
 
 <!-- Page Wrapper -->
 <div id="wrapper">

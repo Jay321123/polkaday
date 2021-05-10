@@ -6,14 +6,14 @@
   <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
 </head>
 
-<body style="background-image: url(qwe.png); background-size: cover">
+<body style="background-color: rgba(94,114,228,255)">
   <!-- Sidenav -->
   @include('include.nav-side')
   <!-- Main content -->
   <div class="main-content" id="panel">
     <!-- Topnav -->
-    <nav class=" navbar-expand " style="background-image: url(www.png)">
-      <div class="container-fluid">
+    <nav class=" navbar-expand " style="background-color: white">
+      <div class="container-fluid py-3">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <!-- Search form -->
           @include('include.search')
@@ -24,7 +24,7 @@
     </nav>
     <!-- Header -->
     <!-- Header -->
-    <div class=" py-7" >
+    <div class=" py-0" >
       @include('include.header')
      
     </div>

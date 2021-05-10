@@ -4,8 +4,6 @@
 <head>
     @include('include.head')
   <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
-
-    
 </head>
 
 <body style="background-image: url(qwe.png); background-size: cover">
@@ -26,12 +24,29 @@
     </nav>
     <!-- Header -->
     <!-- Header -->
+    <table>
+        
+        @include('layouts.TableLayout')
+        <tr>
+          <th>Owner Name</th>
+          <th>ID Number</th>
+          <th>Plate Number</th>
+        </tr>
+        <tr>
+            
+          <td> </td>
+          <td></td>
+          <td></td>
+        </tr>
+       
+        
+      </table>
+    <!-- Page content -->
+    <div class="container-fluid mt--6">
     @include('sweetalert::alert')
 
-<!-- Page content -->
-<div class="container-fluid mt--6">
-    {{-- @include('include.content') --}}
-    @yield('section')
+    @include('include.content')
+
     </div>
   </div>
   <!-- Argon Scripts -->

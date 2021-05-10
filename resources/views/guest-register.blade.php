@@ -31,7 +31,7 @@
             <div class="col ml-auto mr-auto" >
                 <div class="card card-upgrade">
                     <div class="card-header text-center border-bottom-0" >
-                       <h4 class="card-title">Register Vehicle</h4>
+                       <h4 class="card-title" style="color: rgba(94,114,228,255)"><b> Register Vehicle </b></h4>
 {{--                        <p class="card-category">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur cupiditate excepturi, quae quidem suscipit tempore veniam veritatis? </p>--}}
                     </div>
                     <div class="card-body" >
@@ -43,7 +43,7 @@
                                     
                                     <div class="col-lg-10" >
                                         <div class="form-group">
-                                            <label class="form-control-label" for="input-first-name">School ID</label>
+                                            <label class="form-control-label" for="input-first-name" style="color: rgba(94,114,228,255)"><b> School ID</b></label>
                                              <input type="number" id="input-first-name" class="form-control @error('school_id') is-invalid @enderror" placeholder="School ID" value="" name="school_id" required>
                                             @error('school_id')
                                             <span class="invalid-feedback" role="alert">
@@ -52,8 +52,17 @@
                                             @enderror
                                         </div>
                                         <div class="form-group">
-                                            <label class="form-control-label" for="input-first-name">Owner's Name</label>
+                                            <label class="form-control-label" for="input-first-name" style="color: rgba(94,114,228,255)"><b> Owner's Name </b></label>
                                              <input type="text" id="input-first-name" class="form-control @error('owner_name') is-invalid @enderror" placeholder="Owner Name" value="" name="owner_name" required>
+                                            @error('owner_name')
+                                            <span class="invalid-feedback" role="alert">
+                                                 <strong>{{ $message }}</strong>
+                                            </span>
+                                            @enderror
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="input-first-name" style="color: rgba(94,114,228,255)"><b> Phone number </b></label>
+                                             <input type="text" id="input-first-name" class="form-control @error('phone_number') is-invalid @enderror" placeholder="Phone Number" value="" name="phone_number" required>
                                             @error('owner_name')
                                             <span class="invalid-feedback" role="alert">
                                                  <strong>{{ $message }}</strong>
@@ -62,7 +71,7 @@
                                         </div>
 
                                         <div class="form-group">
-                                            <label class="form-control-label" for="input-first-name">Plate Number</label>
+                                            <label class="form-control-label" for="input-first-name" style="color: rgba(94,114,228,255)"><b> Plate Number</b></label>
                                              <input type="text" id="input-first-name" class="form-control @error('plate_number') is-invalid @enderror" placeholder="Plate Number" value="" name="plate_number" required>
                                             @error('plate_number')
                                             <span class="invalid-feedback" role="alert">
@@ -72,7 +81,7 @@
                                         </div>
                                         
                                         <div class="form-group">
-                                            <label for="sel1">Vehicle brand</label>
+                                            <label for="sel1" style="color: rgba(94,114,228,255)"><b> Vehicle brand </b></label>
                                             <select class="form-control" name="vehicle_type">
                                                 @foreach ($vehicle_types as $type)
                                                     <option value="{{ $type->id }}">{{ $type->brand_name }}</option>
@@ -81,7 +90,7 @@
                                             </select>
                                         </div>
                                         <div class="form-group">
-                                            <label for="sel1">Vehicle Model</label>
+                                            <label for="sel1" style="color: rgba(94,114,228,255)"><b> Vehicle Model</b></label>
                                             <select class="form-control" name="model">
                                                 @foreach ($vehicle_types as $type)
                                                     <option value="{{ $type->id }}">{{ $type->model }}</option>

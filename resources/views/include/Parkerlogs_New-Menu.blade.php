@@ -99,7 +99,7 @@
   <ul class="navbar-nav mb-md-3">
     
     <li class="nav-item">
-      <a class="nav-link" href="/ParkerLogs"
+      <a class="nav-link" href="/logs/parker"
     >
         <i class="ni ni-spaceship"></i>
         <span style="color: rgba(94,114,228,255); font-size: 16px"><b> HTC Parkers Logs </b></span>

@@ -1,10 +1,8 @@
-@extends('layouts.table')
+@extends('layouts.ParkerLogs_New-Table')
 @section('content')
-
-
     <div class="row" >
         <div class="col">
-            <div >
+            <div class="card">
                 <!-- Card header -->
                 <div class="card-header border-0">
                     <a href="/sample-report" class="btn btn-primary m-4">Generate Report</a>
@@ -21,10 +19,11 @@
                
                 
                     <!-- Light table -->
-                <div class="table-responsive" >
-                    <table class="table align-items-center table-flush" >
-                        <thead class="thead-light " >
-                        <tr>
+                <div class="table-responsive">
+                    <table class="table ">
+                        <thead class="thead-light">
+                        <tr >
+                            <th scope="col" class="sort" data-sort="name">Action</th>
                             <th scope="col" class="sort" data-sort="name">Drivers name</th>
                             <th scope="col" class="sort" data-sort="name">drivers school ID</th>
                             <th scope="col" class="sort" data-sort="name" >Date/Time Entered</th>
@@ -40,6 +39,12 @@
                         @foreach($users as $user)
 
                         <tr>
+                            <th scope="row">
+                                <div class="media align-items-center">
+                                  <button class="btn btn-primary btn-sm "> Notify</button>
+                                </div>
+
+                            </th>
                             <th scope="row">
                                 <div class="media align-items-center">
                                     <div class="media-body">
@@ -88,9 +93,7 @@
                                 </div>
 
                             </th>
-                            
-                            
-                            
+                            </th>
                         </tr>
 
                         @endforeach

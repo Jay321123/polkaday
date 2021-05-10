@@ -22,6 +22,7 @@ class CreateParkersTable extends Migration
             $table->unsignedBigInteger('vehicle_type');
             $table->boolean('isValid')->default(true);
             $table->string('qr_number');
+            $table->string('phone_number');
             $table->timestamps();
         });
     }

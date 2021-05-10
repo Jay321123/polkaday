@@ -1,7 +1,7 @@
 <nav class="sidenav navbar navbar-vertical  fixed-left  navbar-expand-xs " id="sidenav-main" style="background-color: White">
     <div class="scrollbar-inner" >
         <!-- Brand -->
-        <div class="sidenav-header  align-items-center" style="background-color: white">
+        <div class="sidenav-header  align-items-center" style="background-image: url(qwe.png)">
         <a class="navbar-brand" >
 {{--                <img src="{{ asset('assets/img/brand/blue.png') }}" class="navbar-brand-img" alt="...">--}}
            <div>

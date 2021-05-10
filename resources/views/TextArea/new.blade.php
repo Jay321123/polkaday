@@ -29,15 +29,17 @@
 
 <table id="customers">
     <tr>
-      <th>Company</th>
-      <th>Contact</th>
-      <th>Country</th>
+      <th>owner_name</th>
+      <th>ID_number</th>
+      <th>Plate_number</th>
+      <th>Phone_number</th>
     </tr>
     @foreach($parkers as $parker)
     <tr>
         <td>{{ $parker->owner_name }}</td>
-        <td>Maria Anders</td>
-        <td>Germany</td>
+        <td>{{ $parker->school_id }}</td>
+        <td>{{ $parker->phone_number }}</td>
+        <td>{{ $parker->plate_number }}</td>
       </tr>
     @endforeach
     

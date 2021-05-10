@@ -5,14 +5,14 @@
     <form class="qr-log" method="post">
         @csrf
             <div class="form-group text-center">
-                <label for="exampleFormControlTextarea1" style="color: green"><b> Input School Id</b></label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" name="school_id" type="text"  style=" opacity: 50%"></textarea>
+                <label for="exampleFormControlTextarea1" style="color: rgba(94,114,228,255)"><b> Input School Id</b></label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" name="school_id" type="text"  style="border-block-color: rgba(94,114,228,255)"></textarea>
             </div>
 
             <div class="form-group text-center" >
                 <div >
-                    <label style="color: green"><b> Scan your QR</b></label>
-                    <input type="text" onfocus="this.value=''" class="form-control" name="qr_number" id="my-input" style="opacity: 50%;"><br>
+                    <label style="color: rgba(94,114,228,255)"><b> Scan your QR</b></label>
+                    <input type="text" onfocus="this.value=''" class="form-control" name="qr_number" id="my-input" style="border-block-color: rgba(94,114,228,255)"><br>
                 </div>
                 
             </div>
@@ -30,7 +30,7 @@
     hover: #666;
     border: none;
     border-radius: 15px;
-     background-color: rgb(47, 172, 9);
+     background-color: rgba(94,114,228,255);
      box-shadow: 0 5px #666;transform: translateY(4px);
      " style="transform-box:translateY(4px); cursor: pointer; opacity: 60%;"> DashBoard </button>
         

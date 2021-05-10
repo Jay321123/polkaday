@@ -4,8 +4,7 @@
       <div class="col-lg-6 col-7">
         <!-- <h6 class="h2 text-white d-inline-block mb-0">Default</h6> -->
         <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
-          <ol class="breadcrumb breadcrumb-links breadcrumb-dark" style="background-color: rgba(24,197,46,255)
-          ">
+          <ol class="breadcrumb breadcrumb-links breadcrumb-dark" style="background-color: white ">
             <li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i></a></li>
             <li style="color: black"><b>Dashboards</b></a></li>
             <!-- <li class="breadcrumb-item active" aria-current="page">Default</li> -->
@@ -22,11 +21,11 @@
       <div class="col-xl-3 col-md-4">
         <div class="card card-stats">
           <!-- Card body -->
-          <div class="card-body" style="background-color: rgba(24,197,46,255)
+          <div class="card-body" style="background-color: white
           ">
             <div class="row">
               <div class="col">
-                <h5 style="color: black"><b> Total CSU</b></h5>
+                <h5 style="color: rgba(94,114,228,255)"><b> Total CSU</b></h5>
                 {{-- <span class="h2 font-weight-bold mb-0">{{\App\User::role('staff')->count()}}</span> --}}
               </div>
               <div class="col-auto">
@@ -45,7 +44,7 @@
       <div class="col-xl-3 col-md-4">
         <div class="card card-stats">
           <!-- Card body -->
-          <div class="card-body" style="background-color: rgba(24,197,46,255)
+          <div class="card-body" style="background-color: white
           ">
             <div class="row">
               <div class="col">
@@ -68,7 +67,7 @@
         <div class="col-xl-3 col-md-4">
             <div class="card card-stats">
                 <!-- Card body -->
-                <div class="card-body" style="background-color: rgba(24,197,46,255)
+                <div class="card-body" style="background-color: white
                 ">
                     <div class="row">
                         <div class="col">
@@ -91,7 +90,7 @@
       <div class="col-xl-3 col-md-4">
         <div class="card card-stats">
           <!-- Card body -->
-          <div class="card-body" style="background-color: rgba(24,197,46,255)
+          <div class="card-body" style="background-color: white
           ">
             <div class="row">
               <div class="col">

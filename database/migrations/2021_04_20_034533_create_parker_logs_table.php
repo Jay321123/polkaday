@@ -20,6 +20,7 @@ class CreateParkerLogsTable extends Migration
             $table->dateTime('dateTime_in')->nullable();
             $table->dateTime('dateTime_out')->nullable();
             $table->string('owner_name');
+            // $table->integer('Phone_number');
             $table->timestamps();
         });
     }

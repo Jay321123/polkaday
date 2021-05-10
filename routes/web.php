@@ -119,3 +119,20 @@ Route::get('/RegisteredVehicle', function(){
     $parkers = Parkers::get();
     return view('TextArea.new', compact( 'parkers'));
 });
+Route::get('/ParkerLogs', function()
+{
+return view('layouts.ParkerLogs-New-Table')
+});
+
+
+Route::get('/test-sms',function(){
+    $ch = curl_init();
+    $itexmo = array('1' => '09071007214', '2' => 'message asasasas', '3' => 'TR-JAYSO007214_UCL2M', 'passwd' => 'w[!r(a{(r9');
+    curl_setopt($ch, CURLOPT_URL,"https://www.itexmo.com/php_api/api.php");
+    curl_setopt($ch, CURLOPT_POST, 1);
+     curl_setopt($ch, CURLOPT_POSTFIELDS, 
+              http_build_query($itexmo));
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    return curl_exec ($ch);
+    curl_close ($ch);
+});
