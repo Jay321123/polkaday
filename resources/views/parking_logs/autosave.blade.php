@@ -1,23 +1,47 @@
 @extends('layouts.scan-form')
 @section('main-content')
+<style>
+    .button {
+      padding: 15px 25px;
+      font-size: 14px;
+      text-align: center;
+      cursor: pointer;
+      outline: none;
+      color: #fff;
+      background-color: #1bac33;
+      border: none;
+      border-radius: 15px;
+     
+    }
+    
+    .button:hover {background-color: #6fd672}
+    
+    .button:active {
+      background-color: #3e8e41;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+    </style>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
     <form class="qr-log" method="post">
         @csrf
             <div class="form-group text-center">
-                <label for="exampleFormControlTextarea1">Input School Id</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" name="school_id" type="text"></textarea>
+                <label for="exampleFormControlTextarea1" style="color: green"><b> Input School Id </b></label>
+                <textarea style="color: green; background-color: transparent" class="form-control" id="exampleFormControlTextarea1" rows="1" name="school_id" type="text" placeholder="Enter Id Number......"></textarea>
             </div>
 
-            <div class="card text-center" >
-                <div class="card-body">
-                    <label> Scan your QR</label>
-                    <input type="text" onfocus="this.value=''" class="form-control" name="qr_number" id="my-input"><br>
+            <div  class="text-center">
+                <div >
+                    <label style="color: green"><b> Scan your QR </b></label>
+                    <input  style="color: green; background-color: transparent" type="text" onfocus="this.value=''" class="form-control" name="qr_number" id="my-input" placeholder="Scan QR. . . . . "><br>
                 </div>
             </div>
-
-
+      
     </form>
+    <form action="/home" method="GET">
+        <button class="button"><b>Dashboard</b></button>
+        </form>
     <div class="form-status-holder"></div>
 
     <script>

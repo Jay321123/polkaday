@@ -104,3 +104,27 @@ Route::get('/admin', function(){
     $users = User::get();
     return view('home',compact('users'));
 });
+
+
+Route::get('/parkerslogs', function()
+{
+  $parkers = ParkerLog::get( );
+
+    return view('New_Design.ParkingLogs',compact('parkers'));
+});
+// Route::get('/parkerslogs', 'LogsController@search' );
+
+Route::get('/RegisteredVehicle', function(){
+$parkers = Parkers::get();
+return view('New_Design.RegisteredVehicle' , compact('parkers'));
+});
+
+Route::get('/Mission_Vission',function(){
+
+    return view('New_Design.Mission_Vission');
+});
+
+Route::get('/ParkingRules',function(){
+
+    return view('New_Design.ParkingRules');
+});

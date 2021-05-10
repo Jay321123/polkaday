@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html>
-<head >
+
+<head>
     @include('include.head')
   <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
 </head>
 
-<body style="background-image: url(qqqqqqqqqqqqqqqqqqqqqq.png)">
+<body  style=" background-image: url(Logo.png), url(qqqqqqqqqqqqqqqqqqqqqq.png);
+background-position: right top, left top;
+background-repeat: no-repeat, repeat;">
   <!-- Sidenav -->
   @include('include.nav-side')
   <!-- Main content -->
   <div class="main-content" id="panel">
     <!-- Topnav -->
-    <nav class=" navbar-expand ">
-      <div class="container-fluid">
+    <nav class=" navbar-expand " >
+      <div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <!-- Search form -->
           @include('include.search')
           <!-- Navbar links -->
-          @include('include.navbar')
+
         </div>
       </div>
     </nav>
     <!-- Header -->
     <!-- Header -->
-    <div class=" py-9" style="background-image: url(qqqqqqqqqqqqqqqqqqqqqq.png)">
-      @include('include.header')
+    <div class=" py-7" >
      
     </div>
     <!-- Page content -->

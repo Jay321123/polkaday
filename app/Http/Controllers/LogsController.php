@@ -25,4 +25,11 @@ class LogsController extends Controller
         ->get();
         return view('logs.guest',compact('guests'));
     }
+    public function search(){
+        $search = $_GET ['search'];
+        $parkers = ParkerLog::where('title','LIKE', '%'.$search.'%')->get();
+    
+        return view('New_Design.ParkingLogs', compact('parkers'));
+    }
+    
 }

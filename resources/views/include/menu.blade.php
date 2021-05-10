@@ -98,7 +98,7 @@
   <ul class="navbar-nav mb-md-3">
     
     <li class="nav-item">
-      <a class="nav-link" href="/logs/parker"
+      <a class="nav-link" href="/parkerslogs"
     >
         <i class="ni ni-spaceship"></i>
         <span style="color: green; font-size: 16px"><b> HTC Parkers Logs </b></span>
@@ -116,7 +116,14 @@
       <a class="nav-link" href="/register/driver"
         >
         <i class="ni ni-palette"></i>
-        <span style="color: green; font-size: 16px"><b> Register Driver </b></span>
+        <span style="color: green; font-size: 16px"><b> Register Vehicle </b></span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/RegisteredVehicle"
+        >
+        <i class="ni ni-palette"></i>
+        <span style="color: green; font-size: 16px"><b> Registered vehicle </b></span>
       </a>
     </li>
 <div >
@@ -125,27 +132,21 @@
       <span style="color: green; font-size: 16px"><b> about </b></span>
     </h6>
     <li class="nav-item">
-      <a class="nav-link" href="#"
+      <a class="nav-link" href="/ParkingRules"
         >
         <i class="ni ni-palette"></i>
-        <span style="color: green; font-size: 16px"><b> parking Rules</b></span>
+        <span style="color: green; font-size: 16px"><b> parking Rules </b></span>
       
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#"
+      <a class="nav-link" href="/Mission_Vission"
         >
         <i class="ni ni-palette"></i>
-        <span style="color: green; font-size: 16px"><b> mision </b></span>
+        <span style="color: green; font-size: 16px"><b> mision/vision </b></span>
       </a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#"
-        >
-        <i class="ni ni-palette"></i>
-        <span style="color: green; font-size: 16px"><b> vision </b></span>
-      </a>
-    </li>
+    
 </div>
     {{-- <li class="nav-item">
       <i class="ni "></i>

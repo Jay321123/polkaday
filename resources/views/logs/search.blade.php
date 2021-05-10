@@ -15,7 +15,6 @@
     <h2 class="text-red">NO LOGS CREATED!</h2>
  @endif
     @foreach($users as $user)
-
     <tr>
         <th scope="row">
             <div class="media align-items-center">
@@ -47,7 +46,6 @@
                     <span class="name mb-0 text-sm">{{$user->dateTime_out}}</span>
                 </div>
             </div>
-
         </th>
         <th scope="row">
             <div class="media align-items-center">
