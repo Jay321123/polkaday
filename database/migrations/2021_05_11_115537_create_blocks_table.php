@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTemperaturesTable extends Migration
+class CreateBlocksTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,9 @@ class CreateTemperaturesTable extends Migration
      */
     public function up()
     {
-        Schema::create('temperatures', function (Blueprint $table) {
+        Schema::create('blocks', function (Blueprint $table) {
             $table->id();
-            $table->string('rfid');
-            $table->string('body_temp');
+            $table->string('block_letter');
             $table->timestamps();
         });
     }
@@ -28,6 +27,6 @@ class CreateTemperaturesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('temperatures');
+        Schema::dropIfExists('blocks');
     }
 }

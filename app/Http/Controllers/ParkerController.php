@@ -38,10 +38,10 @@ class ParkerController extends Controller
             'dateTime_out' =>Carbon::now(),
             'owner_name' =>$parker->owner_name
         ]);
-        $parker->update(['isValid' =>false]);
-
-        
+        $parker->update(['isValid' =>false]);        
       });
+
+      echo "<script>window.close();</script>";
     }
   
     public function register(Request $request){
@@ -58,7 +58,8 @@ class ParkerController extends Controller
         $parker = Parkers::create([
             'school_id' =>$request->school_id,
             'plate_number' =>$request->plate_number,
-            'vehicle_type'=>$request->vehicle_type,
+            'vehicle_model_id'=>$request->city,
+            'vehicle_category_id'=>$request->state,
             'qr_number' =>$qr_code,
             'owner_name' =>$request->owner_name,
             'phone_number'=>$request->phone_number

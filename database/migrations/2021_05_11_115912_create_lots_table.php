@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateVehicleTypesTable extends Migration
+class CreateLotsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,10 @@ class CreateVehicleTypesTable extends Migration
      */
     public function up()
     {
-        Schema::create('vehicle_types', function (Blueprint $table) {
+        Schema::create('lots', function (Blueprint $table) {
             $table->id();
-            $table->string('type');
-            $table->string('brand_name');
-            $table->string('model');
+            $table->string('lot_number');
+            $table->unsignedBigInteger('block_id');
             $table->timestamps();
         });
     }
@@ -29,6 +28,6 @@ class CreateVehicleTypesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('vehicle_types');
+        Schema::dropIfExists('lots');
     }
 }

@@ -7,6 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 class VehicleModel extends Model
 {
    protected $fillable = [
-    'model'
+    'name',
+    'vehicle_category_id'
    ];
+
+   public function cat(){
+      return $this->belongsTo(VehicleCategory::class,'vehicle_category_id','id');
+   }
 }

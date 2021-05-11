@@ -1,5 +1,6 @@
 <?php
 
+use App\VehicleModel;
 use App\VehicleType;
 use Illuminate\Database\Seeder;
 
@@ -12,56 +13,48 @@ class VehicleTypeSeeder extends Seeder
      */
     public function run()
     {
-        VehicleType::insert([
+        VehicleModel::insert([
             [
-                'brand_name' =>'toyota',
-                'model' => 'Toyota Avalon'
-                // 'vechicle_type' =>'',
+               
+                'name' => 'Toyota Avalon',
+                'vehicle_category_id' =>2
+          
             ],
             [
-                'brand_name' =>'kawasaki',
-                'model' => 'Kawasaki Barako II',
-                'model' => 'Kawasaki Barako 123'
+                'name' => 'Kawasaki Barako II',
+                'vehicle_category_id' =>1
+         
+            ],
+            [
+                'name' => 'Civic Hatchback',
+                'vehicle_category_id' =>2
+        
+            ],
+            [
+                'name' => 'Click 150',
+                'vehicle_category_id' =>1
+            ],
+            [
+                'name' => 'Raider 150',
+                'vehicle_category_id' =>1
+            ],
+            [
+                'name' => 'Sniper 150',
+                'vehicle_category_id' =>1
                 
                 // 'vechicle_type' =>'',
             ],
             [
-                'brand_name' =>'honda',
-                'model' => 'Civic Hatchback'
-                // 'vechicle_type' =>'',
-            ],
-            [
-                'brand_name' =>'honda',
-                'model' => 'Click 150',
+                'name' => 'Montero',
+                'vehicle_category_id' =>2
                 
                 // 'vechicle_type' =>'',
             ],
             [
-                'brand_name' =>'Zuzuki',
-                'model' => 'Raider 150',
-                
+                'name' => 'Ranger',
+                'vehicle_category_id' =>2
                 // 'vechicle_type' =>'',
             ],
-            [
-                'brand_name' =>'yamaha',
-                'model' => 'Sniper 150',
-                
-                // 'vechicle_type' =>'',
-            ],
-            [
-                'brand_name' =>'Mitsubishi',
-                'model' => 'Montero',
-                
-                // 'vechicle_type' =>'',
-            ],
-            [
-                'brand_name' =>'Ford',
-                'model' => 'Ranger',
-                
-                // 'vechicle_type' =>'',
-            ],
-            
-            
             
             
         ]);

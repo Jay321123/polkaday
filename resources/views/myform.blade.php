@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="../assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
     <!-- Argon CSS -->
     <link rel="stylesheet" href="../assets/css/argon.css?v=1.2.0" type="text/css" >
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -81,20 +83,17 @@
                                             @enderror
                                         </div>
                                         <div class="form-group">
-                                            <label for="sel1">Vehicle Type</label>
-                                            <select class="form-control" name="vehicle_model_id">
-                                                @foreach ($vehicle_types as $type)
-                                                    <option value="{{ $type->id }}">{{ $type->type }}</option>
+                                            <label for="title">Select Vehicle Type</label>
+                                            <select name="state" class="form-control" style="width:350px" name="vehicle_model_id">
+                                                <option value="">--- Select Vehicle Type ---</option>
+                                                @foreach ($states as $key => $value)
+                                                    <option value="{{ $key }}">{{ $value }}</option>
                                                 @endforeach
                                             </select>
                                         </div>
                                         <div class="form-group">
-                                            <label for="sel1">Vehicle Model</label>
-                                            <select class="form-control" name="model">
-                                                @foreach ($vehicle_types as $type)
-                                                    <option value="{{ $type->id }}">{{ $type->model }}</option>
-                                                @endforeach
-        
+                                            <label for="title">Select City:</label>
+                                            <select name="city" class="form-control" style="width:350px">
                                             </select>
                                         </div>
                                     </div>
@@ -115,6 +114,34 @@
      
     </div>
 </div>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('select[name="state"]').on('change', function() {
+            var stateID = $(this).val();
+            if(stateID) {
+                $.ajax({
+                    url: '/myform/ajax/'+stateID,
+                    type: "GET",
+                    dataType: "json",
+                    success:function(data) {
+
+                        
+                        $('select[name="city"]').empty();
+                        $.each(data, function(key, value) {
+                            $('select[name="city"]').append('<option value="'+ key +'">'+ value +'</option>');
+                        });
+
+
+                    }
+                });
+            }else{
+                $('select[name="city"]').empty();
+            }
+        });
+    });
+</script>
+
 <!-- Argon Scripts -->
 <!-- Core -->
 <script src="../assets/vendor/jquery/dist/jquery.min.js"></script>

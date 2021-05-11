@@ -1,5 +1,6 @@
 <?php
 
+use App\VehicleCategory;
 use App\VehicleType;
 use Illuminate\Database\Seeder;
 
@@ -15,6 +16,7 @@ class DatabaseSeeder extends Seeder
         $this->call(RoleSeeder::class);
         $this->call(FakeUserSeeder::class);
         $this->call(Student::class);
+        $this->call(VehicleCategorySeeder::class);
         $this->call(VehicleTypeSeeder::class);
         $this->call(ColorSeeder::class);
        

@@ -51,6 +51,12 @@ Route::view('test/register','test');
 //Route::view('login-v2','auth.login-v2');
 
 \Illuminate\Support\Facades\Auth::routes();
+
+
+Route::get('myform',array('as'=>'myform','uses'=>'HomeController@myform'));
+Route::get('myform/ajax/{id}',array('as'=>'myform.ajax','uses'=>'HomeController@myformAjax'));
+
+
 Route::get('/register/driver','GuestController@guest_form_regis');
 
 
