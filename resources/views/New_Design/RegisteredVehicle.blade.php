@@ -29,14 +29,14 @@
       
       <body>
       
-      
-      <table>
+        <table>
         <tr style="background-color: transparent">
           <th>Action</th>
           <th>owners name</th>
           <th>owners id number</th>
           <th>phone number</th>
           <th>plate number</th>
+          <th>vehicle_type</th>
           
           
         </tr>
@@ -47,6 +47,7 @@
       <td>{{ $parker->school_id }}</td>
       <td>{{ $parker->phone_number }}</td>
       <td>{{ $parker->plate_number }}</td>
+      <td>{{ $parker->vehicle_type }}</td>
     </tr>
      @endforeach
         
