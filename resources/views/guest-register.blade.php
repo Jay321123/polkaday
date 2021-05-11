@@ -72,6 +72,15 @@
                                         </div>
                                         
                                         <div class="form-group">
+                                            <label class="form-control-label" for="input-first-name">phone number</label>
+                                             <input type="text" id="input-first-name" class="form-control @error('phone_number') is-invalid @enderror" placeholder="Phone Number" value="" name="phone_number" required>
+                                            @error('phone_number')
+                                            <span class="invalid-feedback" role="alert">
+                                                 <strong>{{ $message }}</strong>
+                                            </span>
+                                            @enderror
+                                        </div>
+                                        <div class="form-group">
                                             <label for="sel1">Vehicle brand</label>
                                             <select class="form-control" name="vehicle_type">
                                                 @foreach ($vehicle_types as $type)

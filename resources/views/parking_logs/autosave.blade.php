@@ -6,13 +6,13 @@
         @csrf
             <div class="form-group text-center">
                 <label for="exampleFormControlTextarea1" style="color: green"><b> Input School Id</b></label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" name="school_id" type="text"  style=" opacity: 50%"></textarea>
+                <textarea  style="background-color: transparent" class="form-control" id="exampleFormControlTextarea1" placeholder="Enter ID-number...." rows="1" name="school_id" type="text"  ></textarea>
             </div>
 
             <div class="form-group text-center" >
                 <div >
                     <label style="color: green"><b> Scan your QR</b></label>
-                    <input type="text" onfocus="this.value=''" class="form-control" name="qr_number" id="my-input" style="opacity: 50%;"><br>
+                    <input style="background-color: transparent" type="text" onfocus="this.value=''" class="form-control" name="qr_number" id="my-input" placeholder="Scan QR...." ><br>
                 </div>
                 
             </div>

@@ -13,7 +13,8 @@ class Parkers extends Model
         'brand',
         'qr_number',
         'isValid',
-        'owner_name'
+        'owner_name',
+        'phone_number'
     ];
 
     public function parkerlogs(){

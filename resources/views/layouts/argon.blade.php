@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
 </head>
 
-<body style="background-image: url(qwe.png); background-size: cover">
+<body style="background-image: url(qqqqqqqqqqqqqqqqqqqqqq.png)">
   <!-- Sidenav -->
   @include('include.nav-side')
   <!-- Main content -->
