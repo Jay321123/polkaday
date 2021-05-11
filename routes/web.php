@@ -121,7 +121,7 @@ Route::get('/RegisteredVehicle', function(){
 });
 Route::get('/ParkerLogs', function()
 {
-return view('layouts.ParkerLogs-New-Table')
+return view('layouts.ParkerLogs-New-Table');
 });
 
 
