@@ -19,8 +19,11 @@ class CreateParkerLogsTable extends Migration
             $table->string('plate_number');
             $table->dateTime('dateTime_in')->nullable();
             $table->dateTime('dateTime_out')->nullable();
+<<<<<<< HEAD
             $table->string('owner_name');
             // $table->integer('Phone_number');
+=======
+>>>>>>> parent of 9fc548e (updated database and logs)
             $table->timestamps();
         });
     }

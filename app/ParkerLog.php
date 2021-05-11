@@ -11,8 +11,12 @@ class ParkerLog extends Model
         'dateTime_in',
         'dateTime_out',
         'dateTime_in',
+<<<<<<< HEAD
         'plate_number',
         'owner_name',
+=======
+        'plate_number'
+>>>>>>> parent of 9fc548e (updated database and logs)
     ];
 
     public function parker(){

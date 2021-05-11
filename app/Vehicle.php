@@ -10,8 +10,7 @@ class Vehicle extends Model
         'vehicle_type_id',
         'color_id',
         'parker_id',
-        'plate_number',
-        'owner_name'
+        'plate_number'
     ];
 
     public function parker(){

@@ -26,7 +26,6 @@
     <!-- Header -->
     <div class=" py-0" >
       @include('include.header')
-     
     </div>
     <!-- Page content -->
     <div class="container-fluid mt--6">

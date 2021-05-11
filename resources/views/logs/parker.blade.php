@@ -5,6 +5,7 @@
             <div class="card">
                 <!-- Card header -->
                 <div class="card-header border-0">
+<<<<<<< HEAD
                     <a href="/sample-report" class="btn btn-primary m-4">Generate Report</a>
                     <form  action="/search" method="get">
                         @csrf
@@ -12,24 +13,32 @@
                        <input type="text" placeholder="Search parker.." name="plate_number">
                         <button type="submit"><i class="fa fa-search"></i></button>
                        
+=======
+                    <form action="parker" method="POST">
+                    <h3 class="mb-0">Parker Logs</h3>
+                    <a href="/sample-report" class="btn btn-primary m-4">Generate Report</a>
+                    <input type="text" placeholder="Search parker.." name="search">
+                        <button type="search"><i class="fa fa-search"></i></button>
+>>>>>>> parent of 9fc548e (updated database and logs)
                 </form>
-                
                 </div>
-             
-               
-                
-                    <!-- Light table -->
+                <!-- Light table -->
                 <div class="table-responsive">
                     <table class="table ">
                         <thead class="thead-light">
+<<<<<<< HEAD
                         <tr >
                             <th scope="col" class="sort" data-sort="name">Action</th>
                             <th scope="col" class="sort" data-sort="name">Drivers name</th>
                             <th scope="col" class="sort" data-sort="name">drivers school ID</th>
+=======
+                        <tr>
+                            <th scope="col" class="sort" data-sort="name">Parker Name</th>
+                            <th scope="col" class="sort" data-sort="name">Parker school ID</th>
+>>>>>>> parent of 9fc548e (updated database and logs)
                             <th scope="col" class="sort" data-sort="name" >Date/Time Entered</th>
                            <th scope="col" class="sort" data-sort="name">Date/Time Out</th>
                             <th scope="col">Plate Number</th>
-                            <th scope="col" class="sort" data-sort="name">Owner of vehicle</th>
                         </tr>
                         </thead>
                         <tbody class="list">
@@ -85,6 +94,7 @@
                                 </div>
 
                             </th>
+<<<<<<< HEAD
                             <th scope="row">
                                 <div class="media align-items-center">
                                     <div class="media-body">
@@ -94,6 +104,10 @@
 
                             </th>
                             </th>
+=======
+                            
+                            
+>>>>>>> parent of 9fc548e (updated database and logs)
                         </tr>
 
                         @endforeach

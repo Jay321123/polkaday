@@ -91,8 +91,12 @@
   <hr class="my-3" style="background-color: grey">
   <!-- Heading -->
   <h6 class="navbar-heading p-0 text-muted">
+<<<<<<< HEAD
     <span style="color: rgba(94,114,228,255); font-size: 16px"><b> LOGS </b></span>
     
+=======
+    <span style="color: green; font-size: 16px"><b> LOGS </b></span>
+>>>>>>> parent of 9fc548e (updated database and logs)
   </h6>
   
   <!-- Navigation -->
@@ -120,6 +124,7 @@
         <span style="color: rgba(94,114,228,255); font-size: 16px"><b> Register Vehicle </b></span>
       </a>
     </li>
+<<<<<<< HEAD
     <li class="nav-item">
       <a class="nav-link" href="/RegisteredVehicle"
         >
@@ -149,6 +154,9 @@
     </li>
     
 </div>
+=======
+
+>>>>>>> parent of 9fc548e (updated database and logs)
     {{-- <li class="nav-item">
       <i class="ni "></i>
       <!-- Button trigger modal -->
