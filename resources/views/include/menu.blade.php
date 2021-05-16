@@ -114,7 +114,7 @@
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="/register/driver"
+      <a class="nav-link" href="/myform"
         >
         <i class="ni ni-palette"></i>
         <span style="color: green; font-size: 16px"><b> Register Vehicle </b></span>

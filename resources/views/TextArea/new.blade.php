@@ -58,7 +58,12 @@
     </tr>
     @foreach($parkers as $parker)
     <tr>
-      <td><button class="button" style="background-color: rgb(60, 201, 60); color: black"><b> Notify owner</b></button></td>
+      <td>
+        <a href="/notify/{{ $parker->id }}" class="button"
+          style="background-color: rgb(60, 201, 60); color: black">
+          <b> Notify owner</b>
+      </a>
+      </td>
         <td>{{ $parker->owner_name }}</td>
         <td>{{ $parker->school_id }}</td>
         <td>{{ $parker->plate_number }}</td>

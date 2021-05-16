@@ -29,7 +29,9 @@ class HomeController extends Controller
 
     public function myform()
     {
+        
         $states = DB::table("vehicle_categories")->pluck("name","id");
+       
         return view('myform',compact('states'));
     }
     public function myformAjax($id)
