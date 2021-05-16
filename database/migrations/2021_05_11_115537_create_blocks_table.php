@@ -13,9 +13,11 @@ class CreateBlocksTable extends Migration
      */
     public function up()
     {
-        Schema::create('blocks', function (Blueprint $table) {
+        Schema::create('parking_blocks', function (Blueprint $table) {
             $table->id();
-            $table->string('block_letter');
+            $table->string('block_name');
+            $table->integer('slots');
+            $table->string('parking_type');
             $table->timestamps();
         });
     }

@@ -2,6 +2,8 @@
 
 use App\ParkerLog;
 use App\Parkers;
+use App\ParkingBlock;
+use App\Student;
 use App\User;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
@@ -31,9 +33,6 @@ Route::post('test/temp',function (){
 });
 
 
-Route::get('scanner',function(){
-    return view('scanner');
-});
 
 
 
@@ -45,6 +44,12 @@ Route::get('/report/guest','ReportController@report_all_guest');
 Route::get('/download',function (){
 
 });
+
+Route::get('/scanner',function(){
+    return view('scanner.qr-scanner');
+});
+
+Route::get('scanned-qr','ScannerController@scanned');
 
 Route::view('test/register','test');
 
@@ -130,6 +135,13 @@ Route::get('/ParkerLogs', function()
 {
 return view('layouts.ParkerLogs-New-Table');
 });
+Route::get('/Mblocks' , function(){
+
+$blocks = ParkingBlock::get();
+
+return view('ParkingBlocks.Parkingblocks',compact('blocks'));
+});
+
 
 
 Route::get('/test-sms',function(){

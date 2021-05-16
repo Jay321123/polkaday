@@ -18,19 +18,20 @@
                 
                 </div>
              
-               
                 
                     <!-- Light table -->
                 <div class="table-responsive" >
                     <table class="table align-items-center table-flush" >
                         <thead class="thead-light " >
                         <tr>
-                            <th scope="col" class="sort" data-sort="name">Drivers name</th>
+                            <th scope="col" class="sort" data-sort="name">Owner of vehicle</th>
                             <th scope="col" class="sort" data-sort="name">drivers school ID</th>
                             <th scope="col" class="sort" data-sort="name" >Date/Time Entered</th>
                            <th scope="col" class="sort" data-sort="name">Date/Time Out</th>
                             <th scope="col">Plate Number</th>
-                            <th scope="col" class="sort" data-sort="name">Owner of vehicle</th>
+                            <th scope="col" class="sort" data-sort="name">
+                                Drivers name
+                            </th>
                         </tr>
                         </thead>
                         <tbody class="list">
@@ -59,7 +60,7 @@
                             <th scope="row">
                                 <div class="media align-items-center">
                                     <div class="media-body">
-                                        <span class="name mb-0 text-sm">{{$user->dateTime_in}}</span>
+                                        <span class="name mb-0 text-sm">{{$user->created_at}}</span>
                                     </div>
                                 </div>
 
@@ -99,31 +100,7 @@
                     </table>
                 </div>
                 <!-- Card footer -->
-                <div class="card-footer py-4">
-                    <nav aria-label="...">
-                        <ul class="pagination justify-content-end mb-0">
-                            <li class="page-item disabled">
-                                <a class="page-link" href="#" tabindex="-1">
-                                    <i class="fas fa-angle-left"></i>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                            </li>
-                            <li class="page-item active">
-                                <a class="page-link" href="#">1</a>
-                            </li>
-                            <li class="page-item">
-                                <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="#">
-                                    <i class="fas fa-angle-right"></i>
-                                    <span class="sr-only">Next</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+              {{ $users->links() }}
             </div>
         </div>
     </div>

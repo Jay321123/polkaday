@@ -12,4 +12,8 @@ class Student extends Model
         'id_number',
         'course'
     ];
+
+    public function logs(){
+        return $this->hasMany(ParkerLog::class);
+    }
 }

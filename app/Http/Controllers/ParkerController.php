@@ -66,9 +66,11 @@ class ParkerController extends Controller
         ]); 
 
         //generate qr
+        $req_data = array_merge(['qr_code' => $qr_code],['school_id' =>$request->school_id]);
+        $data = json_encode($req_data);
         $qr=  QrCode::size(500)
             ->format('png')
-            ->generate($qr_code,public_path('QR/'.$qr_code.'.png'));
+            ->generate($data,public_path('QR/'.$qr_code.'.png'));
 
             //clear cache in view
             Artisan::call('view:clear');

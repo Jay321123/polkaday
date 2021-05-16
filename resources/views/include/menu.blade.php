@@ -94,7 +94,23 @@
     <span style="color: green; font-size: 16px"><b> LOGS </b></span>
     
   </h6>
-  
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+       aria-expanded="false">
+        <i class="ni ni-books text-primary"></i>
+        <span style="color: green; font-size: 16px"><b> Parking Blocks</b></span>
+    </a>
+    <div class="dropdown-menu">
+        <a href="/Mblocks" class="nav-link">
+            <i class="ni ni-single-02 text-yellow"></i>
+            <span style="color: green; font-size: 16px"><b>Motorcycle Blocks</b></span>
+        </a>
+        <a href="#" class="nav-link">
+            <i class="ni ni-single-02 text-yellow"></i>
+            <span style="color: green; font-size: 16px"><b> Car Blocks</b></span>
+        </a>
+    </div>
+</li> 
   <!-- Navigation -->
   <ul class="navbar-nav mb-md-3">
     
@@ -105,9 +121,10 @@
         <span style="color: green; font-size: 16px"><b> HTC Parkers Logs </b></span>
       </a>
     </li>
-   
+    
+    
     <li class="nav-item">
-      <a class="nav-link" href="/scanner-test"
+      <a class="nav-link" href="/scanner"
         >
         <i class="ni ni-palette"></i>
         <span style="color: green; font-size: 16px"><b> Scanner Form </b></span>

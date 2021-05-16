@@ -85,23 +85,23 @@
 
 <table>
     <tr>
-        <th>Parker Name</th>
+        <th>Owner's Name</th>
         <th>Parker School Id</th>
         <th>Date Time out</th>
         <th>Date  Time In</th>
         <th>Plate Number</th>
+        <th>Driver's Name</th>
 
 
     </tr>
     @foreach($users as $user)
     <tr>
-    
             <td>{{$user->student->firstname}} {{$user->student->lastname}}</td>
             <td>{{$user->student->id_number}}</td>
             <td>{{$user->dateTime_out}}</td>
             <td>{{$user->dateTime_in}}</td>
             <td>{{$user->plate_number}}</td>
-           
+            <td>{{$user->owner_name}}</td> 
     </tr>
     @endforeach
 

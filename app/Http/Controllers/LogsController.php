@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Attendance;
 use App\ParkerLog;
 use App\User;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class LogsController extends Controller
@@ -17,10 +18,11 @@ class LogsController extends Controller
         return view('logs.parker',compact('users'));
     }
     public function driver_logs(){
+//  dd();
 //        $users = User::with('attendances')->latest()->get();
         $users = ParkerLog::with('parker')
             ->latest()
-            ->get();
+            ->paginate(10);
 
         return view('logs.parker',compact('users'));
     }

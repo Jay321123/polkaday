@@ -77,12 +77,10 @@
 <hr>
 <br>
 <br>
-
 {{--<div style="padding-left:20px">--}}
 {{--    <h1>Responsive Header</h1>--}}
 {{--    <p>Resize the browser window to see the effect.</p>--}}
 {{--</div>--}}
-
 <table>
     <tr>
         <th>Name</th>
