@@ -13,46 +13,46 @@ class Student extends Seeder
     public function run()
     {
         AppStudent::create([
-            'firstname' =>'John ',
-            'lastname' =>'Doe',
-            'id_number' =>'12345678',
+            'firstname' =>'Jhimmy ',
+            'lastname' =>'Villarde',
+            'id_number' =>'12-3131-12',
             'course' =>'BSIT'
         ]);
         AppStudent::create([
-            'firstname' =>'Jane ',
-            'lastname' =>'Cruz',
-            'id_number' =>'87654321',
-            'course' =>'BScoE'
+            'firstname' =>'Jayson ',
+            'lastname' =>'Cedeno',
+            'id_number' =>'87-6543-19',
+            'course' =>'BSIT'
         ]);
         AppStudent::create([
-            'firstname' =>'Marie ',
-            'lastname' =>'Smith',
-            'id_number' =>'12341234',
+            'firstname' =>'Jayson ',
+            'lastname' =>'Andilab',
+            'id_number' =>'12-1231-31',
             'course' =>'BSCS'
             
         ]);
         AppStudent::create([
             'firstname' =>'Margie ',
             'lastname' =>'Ando',
-            'id_number' =>'111111111',
+            'id_number' =>'22-2222-22',
             'course' =>'BSCP'
         ]);
         AppStudent::create([
             'firstname' =>'Louie ',
             'lastname' =>'Rulete',
-            'id_number' =>'222222222',
+            'id_number' =>'33-3333',
             'course' =>'Ganner'
         ]);
         AppStudent::create([
             'firstname' =>'Roland ',
             'lastname' =>'Villa',
-            'id_number' =>'333333333',
+            'id_number' =>'44-4444-11',
             'course' =>'Tanod'
         ]);
         AppStudent::create([
             'firstname' =>'Rhyan ',
             'lastname' =>'Dechosa',
-            'id_number' =>'444444444',
+            'id_number' =>'55-5555-10',
             'course' =>'Mamayotay'
         ]);
     }

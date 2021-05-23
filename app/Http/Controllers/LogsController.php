@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Attendance;
 use App\ParkerLog;
+use App\Parkers;
 use App\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
@@ -15,8 +16,9 @@ class LogsController extends Controller
         $users = ParkerLog::where('plate_number', 'like', request()->plate_number)
         ->get();
 
-        return view('logs.parker',compact('users'));
+        return view('logs.search',compact('users'));
     }
+    
     public function driver_logs(){
 //  dd();
 //        $users = User::with('attendances')->latest()->get();

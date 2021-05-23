@@ -18,9 +18,9 @@
 
 @include('include.head')
 
-<body style="background-image: url(Logo.png), url(qqqqqqqqqqqqqqqqqqqqqq.png);
-background-position: top right , left top;
-background-repeat: no-repeat, repeat;" >
+<body style="background-image: url(Logo.png);
+background-position: top right;
+background-repeat: no-repeat;" >
 
 <!-- Sidenav -->
 

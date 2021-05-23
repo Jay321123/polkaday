@@ -29,11 +29,11 @@
     <!-- Topnav -->
    
     <!-- Page content -->
-    <div class="container-fluid ">
+    <div class="container-fluid bg-green">
             <div class="col ml-auto mr-auto" >
-                <div class="card card-upgrade">
-                    <div class="card-header text-center border-bottom-0" >
-                       <h4 class="card-title">Register Vehicle</h4>
+                <div class="card card-upgrade bg-green">
+                    <div class="card-header text-center border-bottom-0 bg-green" >
+                       <h4 class="card-title" style="color: black"><b>Register Vehicle </b> </h4>
 {{--                        <p class="card-category">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur cupiditate excepturi, quae quidem suscipit tempore veniam veritatis? </p>--}}
                     </div>
                     <div class="card-body" >
@@ -43,10 +43,10 @@
                             <div class="pl-lg-4" >
                                 <div class="row" >
                                     
-                                    <div class="col-lg-10" >
-                                        <div class="form-group">
-                                            <label class="form-control-label" for="input-first-name">School ID</label>
-                                             <input type="number" id="input-first-name" class="form-control @error('school_id') is-invalid @enderror" placeholder="School ID" value="" name="school_id" required>
+                                    <div class="col-lg-10 " >
+                                        <div class="form-group ">
+                                            <label class="form-control-label " for="input-first-name "style="color: black"><b> School ID</b></label>
+                                             <input type="text" id="input-first-name" class="form-control @error('school_id') is-invalid @enderror" placeholder="School ID" value="" name="school_id" required>
                                             @error('school_id')
                                             <span class="invalid-feedback" role="alert">
                                                  <strong>{{ $message }}</strong>
@@ -54,7 +54,7 @@
                                             @enderror
                                         </div>
                                         <div class="form-group">
-                                            <label class="form-control-label" for="input-first-name">Owner's Name</label>
+                                            <label class="form-control-label" for="input-first-name" style="color: black" black><b>Owner's Name</b> </label>
                                              <input type="text" id="input-first-name" class="form-control @error('owner_name') is-invalid @enderror" placeholder="Owner Name" value="" name="owner_name" required>
                                             @error('owner_name')
                                             <span class="invalid-feedback" role="alert">
@@ -64,7 +64,7 @@
                                         </div>
 
                                         <div class="form-group">
-                                            <label class="form-control-label" for="input-first-name">Plate Number</label>
+                                            <label class="form-control-label" for="input-first-name" style="color: black"><b>Plate Number </b> </label>
                                              <input type="text" id="input-first-name" class="form-control @error('plate_number') is-invalid @enderror" placeholder="Plate Number" value="" name="plate_number" required>
                                             @error('plate_number')
                                             <span class="invalid-feedback" role="alert">
@@ -74,8 +74,8 @@
                                         </div>
                                         
                                         <div class="form-group">
-                                            <label class="form-control-label" for="input-first-name">phone number</label>
-                                             <input type="text" id="input-first-name" class="form-control @error('phone_number') is-invalid @enderror" placeholder="Phone Number" value="" name="phone_number" required>
+                                            <label class="form-control-label" for="input-first-name" style="color: black"><b> phone number</b></label>
+                                             <input max="11" type="number"  id="input-first-name" class="form-control @error('phone_number') is-invalid @enderror" placeholder="Phone Number" value="" name="phone_number" $required>
                                             @error('phone_number')
                                             <span class="invalid-feedback" role="alert">
                                                  <strong>{{ $message }}</strong>
@@ -83,7 +83,7 @@
                                             @enderror
                                         </div>
                                         <div class="form-group">
-                                            <label for="title">Select Vehicle Type</label>
+                                            <label for="title" style="color: black"><b> Select Vehicle Type</b></label>
                                             <select name="state" class="form-control" style="width:350px" name="vehicle_model_id">
                                                 <option value="">--- Select Vehicle Type ---</option>
                                                 @foreach ($states as $key => $value)
@@ -92,7 +92,7 @@
                                             </select>
                                         </div>
                                         <div class="form-group">
-                                            <label for="title">Select City:</label>
+                                            <label for="title" style="color: black"><b> Select City:</b></label>
                                             <select name="city" class="form-control" style="width:350px">
                                             </select>
                                         </div>

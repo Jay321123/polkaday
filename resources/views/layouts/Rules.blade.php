@@ -18,9 +18,9 @@
 
 @include('include.head')
 
-<body style="background-image: url(Logo.png), url(qqqqqqqqqqqqqqqqqqqqqq.png);
-background-position: top right , left top;
-background-repeat: no-repeat, repeat;" >
+<body  style="background-image: url(Logo.png);
+background-position: top right;
+background-repeat: no-repeat" >
 
 <!-- Sidenav -->
 
@@ -50,38 +50,7 @@ background-repeat: no-repeat, repeat;" >
                             <div > 
                             <H1 style="color: green;"><b>Parking Rules</b></H1>
                         </div>
-                         <Div>
-                            
-                            <P><B><li style="color: green">
-                            Bawal Tanduay sa Sulod sa parkign area. Mariwana lang pwede
-                        </li></B></P>
                         
-                        </Div>
-                    
-                        
-                        <Div>
-                        <P><B><li style="color: green">
-                            bawal mag date sa parking area. mag iyot lng pwede
-                        </li></B></P>
-                        </Div>
-
-                        <Div>
-                        <P><B><li style="color: green">
-                            bawal mag dala tanduay sa sulod. mag inum lang.
-                        </li></B></P>
-                        </Div>
-
-                        <Div>
-                        <P><B><li style="color: green">
-                             at pinakabawal sa lahat. bawal pumasok si mam del 
-                        </li></B></P>
-                        </Div>
-
-                        <Div>
-                        <P><B><li style="color: green">
-                            bawal ang tapok2 sa sulod ky social distancing. foam party lng
-                        </li></B></P>
-                        </Div>
 
                             </Div>
                         

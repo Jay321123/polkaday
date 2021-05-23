@@ -12,9 +12,11 @@ use Barryvdh\DomPDF\Facade as PDF;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\DB;
+use Symfony\Contracts\Service\Attribute\Required;
 
 class ParkerController extends Controller
 {
+    
     public function logs(){
         $parker = Parkers::where('qr_number',request()->qr_number)->first();
 
@@ -55,6 +57,7 @@ class ParkerController extends Controller
         }
         
         //create/register parker/driver
+        
         $parker = Parkers::create([
             'school_id' =>$request->school_id,
             'plate_number' =>$request->plate_number,
@@ -77,6 +80,8 @@ class ParkerController extends Controller
             //view qr in pdf
         $pdf = PDF::loadView('qrCode',compact('parker'))->setPaper('legal','portrait');
         return $pdf->stream();
+        
+        
     }
 
    

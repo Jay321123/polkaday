@@ -5,18 +5,16 @@
     @include('include.head')
   <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
 </head>
-
-<body style="background-image: url(qqqqqqqqqqqqqqqqqqqqqq.png)">
+<body >
   <!-- Sidenav -->
   @include('include.nav-side')
   <!-- Main content -->
   <div class="main-content" id="panel">
     <!-- Topnav -->
-    <nav class=" navbar-expand " style="background-image: url(www.png)">
+    <nav class=" navbar-expand " >
       <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse " id="navbarSupportedContent ">
           <!-- Search form -->
-          @include('include.search')
           <!-- Navbar links -->
           @include('include.navbar')
         </div>
@@ -24,12 +22,12 @@
     </nav>
     <!-- Header -->
     <!-- Header -->
-    <div class=" py-7" >
+    <div class=" py-7 bg-green" >
       @include('include.header')
      
     </div>
     <!-- Page content -->
-    <div class="container-fluid mt--6">
+    <div class="container-fluid mt--6 ">
     @include('sweetalert::alert')
 
     @include('include.content')

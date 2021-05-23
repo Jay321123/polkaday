@@ -12,6 +12,12 @@ class VehicleController extends Controller
     
         return view('TextArea.new', compact( 'parkers'));
     }
+    public function searchOwner(){
+        $parkers = Parkers::where('school_id', 'like', request()->school_id)
+        ->get();
+
+        return view('TextArea.searchVehicle',compact('parkers'));
+    }
     
     public function send_sms($id){
 

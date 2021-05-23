@@ -6,7 +6,7 @@
         <div class="col">
             <div >
                 <!-- Card header -->
-                <div class="card-header border-0">
+                <div class="card-header border-2 ">
                     <a href="/sample-report" class="btn btn-primary m-4">Generate Report</a>
                     <form  action="/search" method="get">
                         @csrf
@@ -20,21 +20,21 @@
              
                 
                     <!-- Light table -->
-                <div class="table-responsive" >
-                    <table class="table align-items-center table-flush" >
+                <div class="table-responsive "  >
+                    <table class="table align-items-center table-flush " >
                         <thead class="thead-light " >
                         <tr>
-                            <th scope="col" class="sort" data-sort="name">Owner of vehicle</th>
+                            <th scope="col" class="sort" data-sort="name"> Drivers name</th>
                             <th scope="col" class="sort" data-sort="name">drivers school ID</th>
                             <th scope="col" class="sort" data-sort="name" >Date/Time Entered</th>
                            <th scope="col" class="sort" data-sort="name">Date/Time Out</th>
                             <th scope="col">Plate Number</th>
                             <th scope="col" class="sort" data-sort="name">
-                                Drivers name
+                                Owner of vehicle
                             </th>
                         </tr>
                         </thead>
-                        <tbody class="list">
+                        <tbody class="list ">
                      @if(count($users) <= 0)
                         <h2 class="text-red">NO LOGS CREATED!</h2>
                      @endif

@@ -112,6 +112,9 @@ Route::post('/register/parker','ParkerController@register')->name('parker');
 // Route::get('/parker/list','Par');
 
 Route::get('/search','LogsController@search');
+
+Route::get('/searchOwner','VehicleController@searchOwner');
+
 Route::get('/admin', function(){
     
     $users = User::get();
@@ -139,7 +142,10 @@ Route::get('/Mblocks' , function(){
 
 $blocks = ParkingBlock::get();
 
+
 return view('ParkingBlocks.Parkingblocks',compact('blocks'));
+
+
 });
 
 

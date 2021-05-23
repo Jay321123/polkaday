@@ -1,18 +1,36 @@
 @extends('layouts.table')
 @section('content')
+
+<div class="row" >
+        <div class="col">
+            <div >
+                <!-- Card header -->
+                <div class="card-header border-0">
+                    <a href="/sample-report" class="btn btn-primary m-4">Generate Report</a>
+                    <form  action="/search" method="get">
+                        @csrf
+                    <h3 class="mb-0">Parker Logs</h3>
+                       <input type="text" placeholder="Search parker.." name="plate_number">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                       
+                </form>
+                
+                </div>
 <table class="table align-items-center table-flush">
     <thead class="thead-light">
     <tr>
-        <th scope="col" class="sort" data-sort="name">Parker Name</th>
-        <th scope="col" class="sort" data-sort="name">Parker school ID</th>
-        <th scope="col" class="sort" data-sort="name" >Date/Time Entered</th>
-       <th scope="col" class="sort" data-sort="name">Date/Time Out</th>
-        <th scope="col">Plate Number</th>
-    </tr>
+        <th scope="col" class="sort" data-sort="name"> Drivers name</th>
+                            <th scope="col" class="sort" data-sort="name">drivers school ID</th>
+                            <th scope="col" class="sort" data-sort="name" >Date/Time Entered</th>
+                           <th scope="col" class="sort" data-sort="name">Date/Time Out</th>
+                            <th scope="col">Plate Number</th>
+                            <th scope="col" class="sort" data-sort="name">
+                                Owner of vehicle
+                            </th>
     </thead>
     <tbody class="list">
  @if(count($users) <= 0)
-    <h2 class="text-red">NO LOGS CREATED!</h2>
+    <h2 class="text-red">Parker Not Found</h2>
  @endif
     @foreach($users as $user)
 
@@ -53,6 +71,14 @@
             <div class="media align-items-center">
                 <div class="media-body">
                     <span class="name mb-0 text-sm">{{$user->plate_number}}</span>
+                </div>
+            </div>
+
+        </th>
+        <th scope="row">
+            <div class="media align-items-center">
+                <div class="media-body">
+                    <span class="name mb-0 text-sm">{{$user->owner_name}}</span>
                 </div>
             </div>
 

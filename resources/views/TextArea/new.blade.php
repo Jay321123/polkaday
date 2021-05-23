@@ -1,6 +1,7 @@
 @extends('layouts.RegisteredVehicle')
 
 @section('section')
+
 <style>
     #customers {
       font-family: Arial, Helvetica, sans-serif;
@@ -12,7 +13,7 @@
     #customers td, #customers th {
       border: 1px solid #ddd;
       padding: 8px;
-      color:green;
+      color:black;
     }
     tra
     #customers tr:nth-child(even){background-color: transparent;}
@@ -23,7 +24,7 @@
       padding-top: 12px;
       padding-bottom: 12px;
       text-align: left;
-      background-color: #4CAF50;
+      background-color: white;
       color: black;
     }
     button {
@@ -32,7 +33,7 @@
   text-align: center;
   cursor: pointer;
   color: #fff;
-  background-color: #04AA6D;
+  background-color: #def1ea;
   
   border-radius: 15px;
   
@@ -47,20 +48,32 @@
 }
     </style>
 
+<br>
+<br>
+<br>
+<form  action="/searchOwner" method="get">
+<input type="text" placeholder="Search ID number.." name="school_id">
+<button type="submit"><i class="fa fa-search"></i></button>
+</form>
 <table id="customers" >
     <tr>
+      
       <th>actiom</th>
       <th>owners name</th>
       <th>id number</th>
       <th>plate number</th>
       <th>contact number</th>
 
-    </tr>
+    </tr>  
+     @if(count($parkers) <= 0)
+    <h2 class="text-green">ID Number Not Found!</h2>
+    @endif
     @foreach($parkers as $parker)
     <tr>
       <td>
-        <a href="/notify/{{ $parker->id }}" class="button"
-          style="background-color: rgb(60, 201, 60); color: black">
+        <a href="/notify/{{ $parker->id }}" class="btn btn-primary"
+          style="background-color: #2dce89
+          ; color: black">
           <b> Notify owner</b>
       </a>
       </td>
@@ -75,4 +88,5 @@
 
   
   </table>
+ 
 @endsection

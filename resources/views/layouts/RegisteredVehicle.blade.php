@@ -7,18 +7,17 @@
 
     
 </head>
-
-<body style="background-image: url(qqqqqqqqqqqqqqqqqqqqqq.png)">
+<body class="main-content bg-green" >
   <!-- Sidenav -->
   @include('include.nav-side')
   <!-- Main content -->
   <div class="main-content" id="panel">
     <!-- Topnav -->
-    <nav class=" navbar-expand " style="background-image: url(www.png)">
+    <nav class=" navbar-expand " style="background-color: white">
       <div class="container-fluid">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <!-- Search form -->
-          @include('include.search')
+         
           <!-- Navbar links -->
           @include('include.navbar')
         </div>

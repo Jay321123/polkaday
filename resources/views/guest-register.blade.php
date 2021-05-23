@@ -53,7 +53,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label class="form-control-label" for="input-first-name">Owner's Name</label>
-                                             <input type="text" id="input-first-name" class="form-control @error('owner_name') is-invalid @enderror" placeholder="Owner Name" value="" name="owner_name" required>
+                                             <input maxlength="10"  type="text" id="input-first-name" class="form-control @error('owner_name') is-invalid @enderror" placeholder="Owner Name" value="" name="owner_name" required>
                                             @error('owner_name')
                                             <span class="invalid-feedback" role="alert">
                                                  <strong>{{ $message }}</strong>
@@ -63,7 +63,7 @@
 
                                         <div class="form-group">
                                             <label class="form-control-label" for="input-first-name">Plate Number</label>
-                                             <input type="text" id="input-first-name" class="form-control @error('plate_number') is-invalid @enderror" placeholder="Plate Number" value="" name="plate_number" required>
+                                             <input maxlength="5" type="text" id="input-first-name" class="form-control @error('plate_number') is-invalid @enderror" placeholder="Plate Number" value="" name="plate_number" required>
                                             @error('plate_number')
                                             <span class="invalid-feedback" role="alert">
                                                  <strong>{{ $message }}</strong>
@@ -73,13 +73,14 @@
                                         
                                         <div class="form-group">
                                             <label class="form-control-label" for="input-first-name">phone number</label>
-                                             <input type="text" id="input-first-name" class="form-control @error('phone_number') is-invalid @enderror" placeholder="Phone Number" value="" name="phone_number" required>
+                                             <input type="number" maxlength="11" id="input-first-name" class="form-control @error('phone_number') is-invalid @enderror" placeholder="Phone Number" value="" name="phone_number" required>
                                             @error('phone_number')
                                             <span class="invalid-feedback" role="alert">
                                                  <strong>{{ $message }}</strong>
                                             </span>
                                             @enderror
                                         </div>
+                                        
                                         <div class="form-group">
                                             <label for="sel1">Vehicle Type</label>
                                             <select class="form-control" name="vehicle_model_id">

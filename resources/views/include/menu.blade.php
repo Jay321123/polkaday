@@ -2,10 +2,11 @@
 
   <!-- Nav items -->
   <ul>
-    <li class="nav-item" >
+    <li class="nav-item " >
       <a class="nav-link active" href="/home">
+        <hr class="my-3" style="background-color: grey">
         
-        <span style="color: green; font-size: 16px"><b> Dashboard </b></span>
+        <span style="color: black; font-size: 16px"><b> Dashboard </b></span>
       </a>
     </li>
 {{--    <li class="nav-item">--}}
@@ -33,7 +34,7 @@
           <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
              aria-expanded="false">
               <i class="ni ni-circle-08 text-primary"></i>
-              <span style="color: green; background-color: grey; font-size: 16px">User List</span>
+              <span style="color: black; background-color: grey; font-size: 16px">User List</span>
           </a>
           <div class="dropdown-menu">
               {{-- <a href="/admin" class="nav-link">
@@ -46,27 +47,27 @@
               </a> --}}
               <a href="/user" class="nav-link">
                   <i class="ni ni-single-02 text-yellow"></i>
-                  <span style="color: green; font-size: 16px"><b>All User</b></span>
+                  <span style="color: black; font-size: 16px"><b>All User</b></span>
               </a>
           </div>
       </li>
       @endrole
        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-             aria-expanded="false">
-              <i class="ni ni-books text-primary"></i>
-              <span style="color: green; font-size: 16px"><b> Report</b></span>
+        <a class="nav-link" href="/sample-report"
+        >
+            <i class="ni ni-spaceship"></i>
+            <span style="color: black; font-size: 16px"><b> Reports</b></span>
           </a>
-          <div class="dropdown-menu">
+          {{-- <div class="dropdown-menu">
               <a href="#" class="nav-link">
                   <i class="ni ni-single-02 text-yellow"></i>
-                  <span style="color: green; font-size: 16px"><b>Monthly Report</b></span>
+                  <span style="color: black; font-size: 16px"><b>Monthly Report</b></span>
               </a>
               <a href="#" class="nav-link">
                   <i class="ni ni-single-02 text-yellow"></i>
-                  <span style="color: green; font-size: 16px"><b> Report</b></span>
+                  <span style="color: black; font-size: 16px"><b> Report</b></span>
               </a>
-          </div>
+          </div> --}}
       </li> 
       {{-- <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
@@ -91,34 +92,26 @@
   <hr class="my-3" style="background-color: grey">
   <!-- Heading -->
   <h6 class="navbar-heading p-0 text-muted">
-    <span style="color: green; font-size: 16px"><b> LOGS </b></span>
+    <span style="color: black; font-size: 16px"><b> LOGS </b></span>
     
   </h6>
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-       aria-expanded="false">
-        <i class="ni ni-books text-primary"></i>
-        <span style="color: green; font-size: 16px"><b> Parking Blocks</b></span>
-    </a>
-    <div class="dropdown-menu">
-        <a href="/Mblocks" class="nav-link">
-            <i class="ni ni-single-02 text-yellow"></i>
-            <span style="color: green; font-size: 16px"><b>Motorcycle Blocks</b></span>
-        </a>
-        <a href="#" class="nav-link">
-            <i class="ni ni-single-02 text-yellow"></i>
-            <span style="color: green; font-size: 16px"><b> Car Blocks</b></span>
-        </a>
-    </div>
-</li> 
+ 
+
   <!-- Navigation -->
   <ul class="navbar-nav mb-md-3">
+    <li class="nav-item">
+      <a class="nav-link" href="/Mblocks"
+    >
+        <i class="ni ni-spaceship"></i>
+        <span style="color: black; font-size: 16px"><b> Parking blocks</b></span>
+      </a>
+    </li>
     
     <li class="nav-item">
       <a class="nav-link" href="/logs/parker"
     >
         <i class="ni ni-spaceship"></i>
-        <span style="color: green; font-size: 16px"><b> HTC Parkers Logs </b></span>
+        <span style="color: black; font-size: 16px"><b> HTC Parkers Logs </b></span>
       </a>
     </li>
     
@@ -127,33 +120,33 @@
       <a class="nav-link" href="/scanner"
         >
         <i class="ni ni-palette"></i>
-        <span style="color: green; font-size: 16px"><b> Scanner Form </b></span>
+        <span style="color: black; font-size: 16px"><b> Scanner Form </b></span>
       </a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="/myform"
         >
         <i class="ni ni-palette"></i>
-        <span style="color: green; font-size: 16px"><b> Register Vehicle </b></span>
+        <span style="color: black; font-size: 16px"><b> Register Vehicle </b></span>
       </a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="/RegisteredVehicle"
         >
         <i class="ni ni-palette"></i>
-        <span style="color: green; font-size: 16px"><b> Registered Vehicle </b></span>
+        <span style="color: black; font-size: 16px"><b> Registered Vehicle </b></span>
       </a>
     </li>
 <div >
     <hr class="my-3" style="background-color: grey;" >
     <h6 class="navbar-heading p-0 text-muted">
-      <span style="color: green; font-size: 16px"><b> about </b></span>
+      <span style="color: black; font-size: 16px"><b> about </b></span>
     </h6>
     <li class="nav-item">
       <a class="nav-link" href="/Rules"
         >
         <i class="ni ni-palette"></i>
-        <span style="color: green; font-size: 16px"><b> parking Rules</b></span>
+        <span style="color: black; font-size: 16px"><b> parking Rules</b></span>
       
       </a>
     </li>
@@ -161,7 +154,7 @@
       <a class="nav-link" href="mission"
         >
         <i class="ni ni-palette"></i>
-        <span style="color: green; font-size: 16px"><b> Mission/Vission </b></span>
+        <span style="color: black; font-size: 16px"><b> Mission/Vission </b></span>
       </a>
     </li>
     

@@ -6,16 +6,16 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     
 </head>
-    <body>
+    <body style="background-image: url(Logo.png);background-position-x: 85%;background-position-y: 60%; background-size: 40%; background-repeat: no-repeat;">
         @include('sweetalert::alert')
-        <div class="container">
+        <div class="container ">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 ">
                     <video id="preview" width="100%" style="text-align:center;"></video>
                 </div>
                 <form  action="/scanned-qr" method="get" class="form-horizontal">
                     @csrf
-                    <div class="col-md-6">
+                    <div class="col-md-6 ">
                         <label>Student ID number</label>
                         <input type="text" name="student_id"   placeholder="student id number" class="form-control" required >
                         <input type="hidden" name="text" id="text" readonyy="" placeholder="scan qrcode" class="form-control" onfocus="this.value=''">
@@ -47,4 +47,7 @@
         </script>
 
     </body>
+    <form action="/home" method="get">
+    <button class="btn bg-primary"  style="margin-left: 4%">Dashboard</button>
+    </form>
 </html>

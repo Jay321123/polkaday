@@ -45,34 +45,33 @@ body {
 }
 </style>
 </head>
-<body>
+<body >
 
-<h2>Responsive Column Cards</h2>
-<p>Resize the browser window to see the effect.</p>
 
-<div class="col s12 m3">
-  <div class="col s12 m3">
-    <div class="card">
+<div class="col s12 m3 ">
+  <div class="col s12 m3 ">
+    <div class="card ">
       <h3>Parking Status</h3>
       <p></p>
     </div>
   </div>
 </div>
 
-<div class="container">
-    <div class="row">
+<div class="container ">
+    <div class="row ">
         @foreach($blocks as $block)
-        <div class="col">
+           <div class="col">
             <div class="card">
                 <h3>{{ $block->block_name }}</h3>
                 <p> Available slots: {{ $block->slots }}</p>  
+                
             </div>
           </div>
         @endforeach
     
 
       
-      <div class="w-100"></div>
+      <div class="w-100 "></div>
     </div>
   </div>
 @endsection

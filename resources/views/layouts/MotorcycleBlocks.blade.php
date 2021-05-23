@@ -6,15 +6,15 @@
   <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
 </head>
 
-<body style="background-image: url(qqqqqqqqqqqqqqqqqqqqqq.png)">
+<body >
   <!-- Sidenav -->
   @include('include.nav-side')
   <!-- Main content -->
-  <div class="main-content" id="panel">
+  <div class="main-content py-9 col-22 bg-green" id="panel ">
     <!-- Topnav -->
-    <nav class=" navbar-expand " style="background-image: url(www.png)">
-      <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <nav class=" navbar-expand  ">
+      <div class="container-fluid ">
+        <div class="collapse navbar-collapse " id="navbarSupportedContent bg-green">
           <!-- Search form -->
          
           <!-- Navbar links -->
@@ -26,7 +26,7 @@
     <!-- Header -->
     
     <!-- Page content -->
-    <div class="container-fluid mt--6">
+    <div class="main-content py-2  bg-green">
     @include('sweetalert::alert')
 
     @include('include.content')
