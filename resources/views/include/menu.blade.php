@@ -107,8 +107,15 @@
         <span style="color: black; font-size: 16px"><b> Parking blocks</b></span>
       </a>
     </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/logs/parker"
+    >
+        <i class="ni ni-spaceship"></i>
+        <span style="color: black; font-size: 16px"><b> HTC Parkers Logs </b></span>
+      </a>
+    </li>
     @endrole
-    @role('super_admin|admin')
+    @role('super_admin')
     
     <li class="nav-item">
       <a class="nav-link" href="/logs/parker"
