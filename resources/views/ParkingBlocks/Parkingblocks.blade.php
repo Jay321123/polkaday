@@ -56,20 +56,38 @@ body {
     </div>
   </div>
 </div>
-
 <div class="container ">
     <div class="row ">
-        @foreach($blocks as $block)
-           <div class="col">
-            <div class="card">
-                <h3>{{ $block->block_name }}</h3>
-                <p> Available slots: {{ $block->slots }}</p>  
-                
-            </div>
+        <div class="col">
+          <div class="card">
+              <h3>Motor Blocks</h3>
+              <div class="row">
+                @foreach($firsts as $motor)
+                  @if($motor->status =='occupied')
+                  <div class="col bg-danger m-2 p-5">{{ $motor->slot_name }}</div>
+                  @else
+                  <div class="col bg-primary m-2 p-5">{{ $motor->slot_name }}</div>
+                  @endif
+                @endforeach
+                 </div>
           </div>
-        @endforeach
-    
 
+          <div class="card">
+            <h3>Car Blocks</h3>
+            <div class="row">
+              <div class="w-100"></div>
+              @foreach($secondaries as $car)
+              @if($car->status =='occupied')
+              <div class="col bg-danger m-2 p-5">{{ $car->slot_name }}</div>
+              @else
+              <div class="col bg-warning m-2 p-5">{{ $car->slot_name }}</div>
+              @endif
+              @endforeach
+            </div>
+        </div>
+        </div>
+    
+            
       
       <div class="w-100 "></div>
     </div>

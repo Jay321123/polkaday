@@ -51,21 +51,29 @@ class ParkerController extends Controller
         $qr_code = Str::uuid();
 
         //validation check if student enrolled
-        $check_student = Student::where('id_number',$request->school_id)->first();
-        if($check_student ===null){
-          return redirect()->back()->with('info', 'Student is not Enrolled!');
-        }
+        // $check_student = Student::where('id_number',$request->school_id)->first();
+        // if($check_student ===null){
+        //   return redirect()->back()->with('info', 'Student is not Enrolled!');
+        // }
         
         //create/register parker/driver
         
+        if($request->parker_type == 'student'){
+            $expiration = Carbon::now()->addMonth(5);
+        }if($request->parker_type == 'employee'){
+            $expiration = Carbon::now()->addYear(1);
+        }
         $parker = Parkers::create([
-            'school_id' =>$request->school_id,
             'plate_number' =>$request->plate_number,
             'vehicle_model_id'=>$request->city,
             'vehicle_category_id'=>$request->state,
             'qr_number' =>$qr_code,
             'owner_name' =>$request->owner_name,
-            'phone_number'=>$request->phone_number
+            'phone_number'=>$request->phone_number,
+            'color' =>$request->color,
+            'department' =>$request->department,
+            'parker_type' =>$request->parker_type,
+            'qr_expiration' =>$expiration
         ]); 
 
         //generate qr

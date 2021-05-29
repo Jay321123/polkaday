@@ -16,7 +16,6 @@ class CreateBlocksTable extends Migration
         Schema::create('parking_blocks', function (Blueprint $table) {
             $table->id();
             $table->string('block_name');
-            $table->integer('slots');
             $table->string('parking_type');
             $table->timestamps();
         });

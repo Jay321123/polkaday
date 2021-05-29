@@ -8,12 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class ParkerLog extends Model
 {
     protected $fillable = [
-        'student_id',
+        'parker_id',
         'dateTime_in',
         'dateTime_out',
         'dateTime_in',
         'plate_number',
-        'owner_name'
+        'owner_name',
     ];
 
     public function parker(){

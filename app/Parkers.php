@@ -15,10 +15,14 @@ class Parkers extends Model
         'isValid',
         'owner_name',
         'phone_number',
-        'vehicle_category_id'
+        'vehicle_category_id',
+        'color',
+        'department',
+        'parker_type',
+        'qr_expiration'
     ];
 
-    public function parkerlogs(){
+    public function logs(){
         return $this->hasMany(ParkerLog::class,'parker_id','id');
     }
 

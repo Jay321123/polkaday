@@ -17,7 +17,7 @@ class CreateParkersTable extends Migration
  
         Schema::create('parkers', function (Blueprint $table) {
             $table->id();
-            $table->string('school_id');
+            $table->string('school_id')->nullable();
             $table->string('owner_name');
             $table->string('plate_number');
             $table->string('phone_number');
@@ -25,6 +25,11 @@ class CreateParkersTable extends Migration
             $table->unsignedBigInteger('vehicle_category_id');
             $table->boolean('isValid')->default(true);
             $table->string('qr_number');
+            $table->string('color')->nullable();
+            $table->string('department')->nullable();
+            $table->string('parker_type')->nullable();
+            $table->date('qr_expiration')->nullable();
+        
             $table->timestamps();
         });
     }

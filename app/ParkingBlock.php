@@ -6,9 +6,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class ParkingBlock extends Model
 {
-    protected $illable = [
+    protected $fillable = [
         'block_name',
-        'slots',
         'parking_type'
     ];
+
+    public function slots(){
+        return $this->hasMany(Slots::class);
+    }
 }

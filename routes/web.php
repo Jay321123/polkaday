@@ -3,6 +3,7 @@
 use App\ParkerLog;
 use App\Parkers;
 use App\ParkingBlock;
+use App\Slots;
 use App\Student;
 use App\User;
 use Illuminate\Support\Facades\Artisan;
@@ -142,8 +143,9 @@ Route::get('/Mblocks' , function(){
 
 $blocks = ParkingBlock::get();
 
-
-return view('ParkingBlocks.Parkingblocks',compact('blocks'));
+$firsts = Slots::where('parking_block_id',1)->get();
+$secondaries = Slots::where('parking_block_id',2)->get();
+return view('ParkingBlocks.Parkingblocks',compact('blocks','firsts','secondaries'));
 
 
 });

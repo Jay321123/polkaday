@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateParkerLogsTable extends Migration
+class CreateSlotsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,11 @@ class CreateParkerLogsTable extends Migration
      */
     public function up()
     {
-        Schema::create('parker_logs', function (Blueprint $table) {
+        Schema::create('slots', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('parker_id');
-            $table->string('plate_number');
-            $table->dateTime('dateTime_in')->nullable();
-            $table->dateTime('dateTime_out')->nullable();
-            $table->string('owner_name');
+            $table->string('slot_name');
+            $table->unsignedBigInteger('parking_block_id');
+            $table->string('status')->default('available');
             $table->timestamps();
         });
     }
@@ -31,6 +29,6 @@ class CreateParkerLogsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('parker_logs');
+        Schema::dropIfExists('slots');
     }
 }

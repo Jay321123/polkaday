@@ -15,11 +15,13 @@
                 </div>
                 <form  action="/scanned-qr" method="get" class="form-horizontal">
                     @csrf
-                    <div class="col-md-6 ">
+                    {{-- <div class="col-md-6 ">
                         <label>Student ID number</label>
                         <input type="text" name="student_id"   placeholder="student id number" class="form-control" required >
                         <input type="hidden" name="text" id="text" readonyy="" placeholder="scan qrcode" class="form-control" onfocus="this.value=''">
-                    </div>
+                    </div> --}}
+                    <input type="hidden" name="text" id="text" readonyy="" placeholder="scan qrcode" class="form-control" onfocus="this.value=''">
+
                 </form>
                
             </div>

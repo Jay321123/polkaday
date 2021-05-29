@@ -15,12 +15,10 @@ class BlockSeeder extends Seeder
         ParkingBlock::insert([
             [
                 'block_name' => 'Motorcycle Block',
-                'slots' =>10,
                 'parking_type' =>'motor'
             ],
             [
                 'block_name' => 'Car Block',
-                'slots' =>10,
                 'parking_type' =>'car'
             ],
         ]);

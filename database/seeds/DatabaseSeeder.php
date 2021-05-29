@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
         $this->call(VehicleTypeSeeder::class);
         $this->call(ColorSeeder::class);
         $this->call(BlockSeeder::class);
+        $this->call(SlotSeeder::class);
        
     }
 }

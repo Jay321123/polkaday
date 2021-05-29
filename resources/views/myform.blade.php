@@ -44,15 +44,7 @@
                                 <div class="row" >
                                     
                                     <div class="col-lg-10 " >
-                                        <div class="form-group ">
-                                            <label class="form-control-label " for="input-first-name "style="color: black"><b> School ID</b></label>
-                                             <input type="text" id="input-first-name" class="form-control @error('school_id') is-invalid @enderror" placeholder="School ID" value="" name="school_id" required>
-                                            @error('school_id')
-                                            <span class="invalid-feedback" role="alert">
-                                                 <strong>{{ $message }}</strong>
-                                            </span>
-                                            @enderror
-                                        </div>
+                                        
                                         <div class="form-group">
                                             <label class="form-control-label" for="input-first-name" style="color: black" black><b>Owner's Name</b> </label>
                                              <input type="text" id="input-first-name" class="form-control @error('owner_name') is-invalid @enderror" placeholder="Owner Name" value="" name="owner_name" required>
@@ -72,7 +64,6 @@
                                             </span>
                                             @enderror
                                         </div>
-                                        
                                         <div class="form-group">
                                             <label class="form-control-label" for="input-first-name" style="color: black"><b> phone number</b></label>
                                              <input max="11" type="number"  id="input-first-name" class="form-control @error('phone_number') is-invalid @enderror" placeholder="Phone Number" value="" name="phone_number" $required>
@@ -92,8 +83,35 @@
                                             </select>
                                         </div>
                                         <div class="form-group">
-                                            <label for="title" style="color: black"><b> Select City:</b></label>
+                                            <label for="title" style="color: black"><b> Select Brand:</b></label>
                                             <select name="city" class="form-control" style="width:350px">
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="title" style="color: black"><b> Select Color:</b></label>
+                                            <select name="color" class="form-control" style="width:350px">
+                                                <option value="red">Red</option>
+                                                <option value="yellow">Yellow</option>
+                                                <option value="white">White</option>
+                                                <option value="blue">Blue</option>
+                                                <option value="green">Green</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="title" style="color: black"><b> Select Department:</b></label>
+                                            <select name="color" class="form-control" style="width:350px">
+                                                <option value="cete">CETE</option>
+                                                <option value="ccje">CCJE</option>
+                                                <option value="cbma">CBMA</option>
+                                                <option value="cte">CTE</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="title" style="color: black"><b> Select Type Of Parker:</b></label>
+                                            <select name="parker_type" class="form-control" style="width:350px">
+                                                <option value="student">Student</option>
+                                                <option value="employee">Employee</option>
+                                            
                                             </select>
                                         </div>
                                     </div>

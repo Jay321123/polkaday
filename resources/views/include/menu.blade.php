@@ -99,6 +99,7 @@
 
   <!-- Navigation -->
   <ul class="navbar-nav mb-md-3">
+    @role('admin')
     <li class="nav-item">
       <a class="nav-link" href="/Mblocks"
     >
@@ -106,6 +107,8 @@
         <span style="color: black; font-size: 16px"><b> Parking blocks</b></span>
       </a>
     </li>
+    @endrole
+    @role('super_admin|admin')
     
     <li class="nav-item">
       <a class="nav-link" href="/logs/parker"
@@ -116,13 +119,7 @@
     </li>
     
     
-    <li class="nav-item">
-      <a class="nav-link" href="/scanner"
-        >
-        <i class="ni ni-palette"></i>
-        <span style="color: black; font-size: 16px"><b> Scanner Form </b></span>
-      </a>
-    </li>
+  
     <li class="nav-item">
       <a class="nav-link" href="/myform"
         >
@@ -137,6 +134,16 @@
         <span style="color: black; font-size: 16px"><b> Registered Vehicle </b></span>
       </a>
     </li>
+    @endrole
+    @role('admin')
+    <li class="nav-item">
+      <a class="nav-link" href="/scanner"
+        >
+        <i class="ni ni-palette"></i>
+        <span style="color: black; font-size: 16px"><b> Scanner Form </b></span>
+      </a>
+    </li>
+    @endrole
 <div >
     <hr class="my-3" style="background-color: grey;" >
     <h6 class="navbar-heading p-0 text-muted">
