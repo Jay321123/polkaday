@@ -24,6 +24,8 @@
                     <table class="table align-items-center table-flush " >
                         <thead class="thead-light " >
                         <tr>
+                            <th scope="col" class="sort" data-sort="name" >color</th>
+                            <th scope="col" class="sort" data-sort="name" >department</th>
                             <th scope="col" class="sort" data-sort="name" >Date/Time Entered</th>
                            <th scope="col" class="sort" data-sort="name">Date/Time Out</th>
                             <th scope="col">Plate Number</th>
@@ -39,6 +41,21 @@
                         @foreach($users as $user)
 
                         <tr>
+
+                            <th scope="row">
+                                <div class="media align-items-center">
+                                    <div class="media-body">
+                                        <span class="name mb-0 text-sm">{{$user->parker->color}}</span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th scope="row">
+                                <div class="media align-items-center">
+                                    <div class="media-body">
+                                        <span class="name mb-0 text-sm">{{$user->parker->department}}</span>
+                                    </div>
+                                </div>
+                            </th>
                            
                          
                             <th scope="row">

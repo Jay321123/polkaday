@@ -26,6 +26,10 @@ class ScannerController extends Controller
     
         $parker = Parkers::where('qr_number',$data->qr_code)->first();
 
+        if($parker->expiration_status == 'expired') {
+          return redirect()->back()->with('info','Your QR is Expired!');
+        }
+
     
             if($parker ==null){
                 return redirect()->back()->with('info','QR Does not Exist!');

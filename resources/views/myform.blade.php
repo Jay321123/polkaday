@@ -97,7 +97,7 @@
                                                 <option value="green">Green</option>
                                             </select>
                                         </div>
-                                        <div class="form-group">
+                                        {{-- <div class="form-group">
                                             <label for="title" style="color: black"><b> Select Department:</b></label>
                                             <select name="color" class="form-control" style="width:350px">
                                                 <option value="cete">CETE</option>
@@ -105,6 +105,35 @@
                                                 <option value="cbma">CBMA</option>
                                                 <option value="cte">CTE</option>
                                             </select>
+                                        </div> --}}
+                                        <div class="form-group"> 
+                                            <label for="title" style="color: black"><b> Select Department</b></label>
+                                              <div class="checkbox  ">
+                                                <label class="form-checkbox form-icon" for="s_fac">
+                                                    CETE
+                                                </label>
+                                                <input id="s_fac" type="checkbox" value="cete"  name="department" class="sev_check">
+                                            </div>
+                                            <div class="checkbox">
+                                                <label class="form-checkbox form-icon" for="s_fac1">
+                                                   CCJE
+                                                </label>
+                                                <input id="s_fac1" type="checkbox"  value="ccje"   name="department"  class="sev_check">
+                                            </div>
+                                            <div class="checkbox">
+                                                <label class="form-checkbox form-icon" for="s_fac2">
+                                                    CBMA
+                                                </label>
+                                                <input id="s_fac2" type="checkbox"  value="cbma"  name="department" class="sev_check">
+                                            </div>
+
+                                            <div class="checkbox">
+                                                <label class="form-checkbox form-icon" for="s_fac3">
+                                                    CTE 
+                                                </label>
+                                                <input id="s_fac3" type="checkbox"  value="cte" name="department"   class="sev_check">
+                                            </div>
+
                                         </div>
                                         <div class="form-group">
                                             <label for="title" style="color: black"><b> Select Type Of Parker:</b></label>
@@ -134,6 +163,13 @@
 </div>
 
 <script type="text/javascript">
+$(function () {
+  $('.sev_check').click(function(e) {
+    $('.sev_check').not(this).prop('checked', false);
+  });
+});
+
+
     $(document).ready(function() {
         $('select[name="state"]').on('change', function() {
             var stateID = $(this).val();

@@ -29,7 +29,7 @@ class CreateParkersTable extends Migration
             $table->string('department')->nullable();
             $table->string('parker_type')->nullable();
             $table->date('qr_expiration')->nullable();
-        
+            $table->string('expiration_status')->nullable()->default('active');
             $table->timestamps();
         });
     }

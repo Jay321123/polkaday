@@ -61,7 +61,7 @@ class ParkerController extends Controller
         if($request->parker_type == 'student'){
             $expiration = Carbon::now()->addMonth(5);
         }if($request->parker_type == 'employee'){
-            $expiration = Carbon::now()->addYear(1);
+            $expiration = null;
         }
         $parker = Parkers::create([
             'plate_number' =>$request->plate_number,

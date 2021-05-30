@@ -19,7 +19,8 @@ class Parkers extends Model
         'color',
         'department',
         'parker_type',
-        'qr_expiration'
+        'qr_expiration',
+        'expiration_status'
     ];
 
     public function logs(){

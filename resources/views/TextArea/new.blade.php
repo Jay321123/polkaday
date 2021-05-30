@@ -63,6 +63,7 @@
       <th>id number</th>
       <th>plate number</th>
       <th>contact number</th>
+      <th>Sticker Status</th>
 
     </tr>  
      @if(count($parkers) <= 0)
@@ -81,6 +82,7 @@
         <td>{{ $parker->school_id }}</td>
         <td>{{ $parker->plate_number }}</td>
         <td>{{ $parker->phone_number }}</td>
+        <td>{{ $parker->expiration_status }}</td>
       </tr>
 
     @endforeach
